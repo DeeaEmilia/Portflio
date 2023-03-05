@@ -68,7 +68,7 @@ button {
   cursor: pointer;
 }
 button:hover {
-  background: linear-gradient(var(--wrapper), var(--wrapper)) padding-box, linear-gradient(45deg, hsl(248, 53%, 58%), hsl(16, 100%, 66%)) border-box;
+  background: linear-gradient(var(--wrapper), var(--wrapper)) padding-box, linear-gradient(45deg, hsl(16, 100%, 66%), hsl(248, 53%, 58%)) border-box;
 }
 
 :root {
@@ -105,44 +105,38 @@ body {
   left: 0;
   right: 0;
   top: 0;
+  border-radius: 34px;
   cursor: pointer;
   position: absolute;
   transition: 0.4s;
+  box-shadow: hsla(0, 0%, 0%, 0.15) 0px 2px 8px;
 }
 .theme-switch .slider:before {
   background-color: hsl(0, 0%, 100%);
-  left: 0.2rem;
+  left: 0.4rem;
   top: 0.25rem;
   content: "";
   height: 2rem;
+  border-radius: 50%;
   position: absolute;
   transition: 0.4s;
   width: 2rem;
+  box-shadow: hsla(0, 0%, 0%, 0.15) 0px 2px 8px;
 }
-
 .theme-switch input:checked + .slider {
   background-color: hsl(0, 0%, 24%);
 }
-
 .theme-switch input:checked + .slider:before {
   transform: translateX(26px);
 }
 
-.slider.round {
-  border-radius: 34px;
-}
-
-.slider.round:before {
-  border-radius: 50%;
-}
-
 .main-content {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
 }
 
 .about {
   max-width: 80ch;
+  flex-direction: column;
 }
 
 .wrapper {
@@ -153,20 +147,12 @@ body {
   height: -moz-fit-content;
   height: fit-content;
   box-shadow: hsla(0, 0%, 0%, 0.15) 0px 2px 8px;
-}
-
-.media {
   display: flex;
   justify-content: center;
   transition: 500ms;
 }
-.media img {
+.wrapper img {
   width: 10rem;
-}
-.media:hover {
-  filter: brightness(120%);
-  cursor: pointer;
-  transition: 500ms;
 }
 
 .picture-container {
@@ -176,20 +162,38 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   box-shadow: hsla(0, 0%, 0%, 0.15) 0px 2px 8px;
-}
-.picture-container:hover {
-  filter: brightness(110%);
-  cursor: auto;
+  border-radius: 20rem;
+  margin: 1rem;
 }
 
 .linkedin-container {
   background-color: var(--linkedin);
 }
+.linkedin-container:hover {
+  filter: brightness(120%);
+  cursor: pointer;
+  transition: 500ms;
+}
 
 .github-container {
   background-color: var(--github);
 }
+.github-container:hover {
+  filter: brightness(120%);
+  cursor: pointer;
+  transition: 500ms;
+}
 
+.leetcode-container:hover {
+  filter: brightness(120%);
+  cursor: pointer;
+  transition: 500ms;
+}
+
+.learning-path {
+  flex-direction: column;
+  align-items: center;
+}
 .learning-path h2 {
   margin-bottom: 1rem;
 }

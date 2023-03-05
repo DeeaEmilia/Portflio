@@ -31,73 +31,83 @@ body {
   }
 }
 
-.theme-switch .slider {
-  background-color: hsl(0, 0%, 80%);
-  bottom: 0;
-  left: 0;
-  right: 0;
-  top: 0;
-  cursor: pointer;
-  position: absolute;
-  transition: 0.4s;
-
-  &:before {
-    background-color: hsl(0, 0%, 100%);
-    left: 0.2rem;
-    top: 0.25rem;
-    content: '';
-    height: 2rem;
+.theme-switch {
+  .slider {
+    background-color: hsl(0, 0%, 80%);
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    border-radius: 34px;
+    cursor: pointer;
     position: absolute;
     transition: 0.4s;
-    width: 2rem;
+    box-shadow: hsla(0, 0%, 0%, 0.15) 0px 2px 8px;
+
+    &:before {
+      background-color: hsl(0, 0%, 100%);
+      left: 0.4rem;
+      top: 0.25rem;
+      content: '';
+      height: 2rem;
+      border-radius: 50%;
+      position: absolute;
+      transition: 0.4s;
+      width: 2rem;
+      box-shadow: hsla(0, 0%, 0%, 0.15) 0px 2px 8px;
+    }
+  }
+
+  input:checked + .slider {
+    background-color: hsl(0, 0%, 24%);
+  }
+
+  input:checked + .slider:before {
+    transform: translateX(26px);
   }
 }
 
-.theme-switch input:checked + .slider {
-  background-color: hsl(0, 0%, 24%);
-}
-
-.theme-switch input:checked + .slider:before {
-  transform: translateX(26px);
-}
-
-.slider.round {
-  border-radius: 34px;
-}
-
-.slider.round:before {
-  border-radius: 50%;
-}
-
-
-
 .main-content {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+
 }
 
 .about {
   max-width: 80ch;
+  flex-direction: column;
 }
 
 .wrapper {
-    background-color: var(--wrapper);
-    border-radius: 1rem;
-    padding: 2rem;
-    margin: 1rem;
-    height: fit-content;
-    box-shadow: hsla(0, 0%, 0%, 0.15) 0px 2px 8px;
-  }
-
-.media {
+  background-color: var(--wrapper);
+  border-radius: 1rem;
+  padding: 2rem;
+  margin: 1rem;
+  height: fit-content;
+  box-shadow: hsla(0, 0%, 0%, 0.15) 0px 2px 8px;
   display: flex;
   justify-content: center;
   transition: 500ms;
- 
-        img {
-            width: 10rem;
+
+  img {
+    width: 10rem;
   }
 
+
+}
+
+.picture-container {
+  height: 14rem;
+  width: 14rem;
+  background-image: url(../images/Deea.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  box-shadow: hsla(0, 0%, 0%, 0.15) 0px 2px 8px;
+  border-radius: 20rem;
+  margin: 1rem;
+}
+
+.linkedin-container {
+  background-color: var(--linkedin);
   &:hover {
     filter: brightness(120%);
     cursor: pointer;
@@ -105,29 +115,27 @@ body {
   }
 }
 
-.picture-container {
-    height: 14rem;
-    width: 14rem;
-    background-image: url(../images/Deea.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    box-shadow: hsla(0, 0%, 0%, 0.15) 0px 2px 8px;
-
-    &:hover{
-        filter: brightness(110%);
-        cursor:auto;
-    }
-}
-
-.linkedin-container {
-  background-color: var(--linkedin);
-}
-
 .github-container {
   background-color: var(--github);
+  &:hover {
+    filter: brightness(120%);
+    cursor: pointer;
+    transition: 500ms;
+  }
+}
+
+.leetcode-container {
+    &:hover {
+        filter: brightness(120%);
+        cursor: pointer;
+        transition: 500ms;
+      }
 }
 
 .learning-path {
+    flex-direction: column;
+    align-items: center;
+    
   h2 {
     margin-bottom: 1rem;
   }

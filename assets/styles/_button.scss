@@ -16,6 +16,6 @@ button {
 
   &:hover {
     background: linear-gradient(var(--wrapper), var(--wrapper)) padding-box,
-    linear-gradient(45deg, hsl(248, 53%, 58%), hsl(16, 100%, 66%)) border-box;
+    linear-gradient(45deg, hsl(16, 100%, 66%), hsl(248, 53%, 58%)) border-box;
   }
 }
