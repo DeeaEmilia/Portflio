@@ -7,8 +7,6 @@ This is my personal portfolio website, where I showcase my skills, experience an
 - [Features](#features)
 - [Live Demo](#live-demo)
 - [Technologies Used](#technologies-used)
-- [Installation and Usage](#installation-and-usage)
-- [Contributing](#contributing)
 - [License](#license)
 
 ## Features
