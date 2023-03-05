@@ -1,0 +1,21 @@
+button {
+  font-size: 1rem;
+  font-weight: bold;
+  color: var(--font);
+  padding: 1rem;
+  border: solid 2px;
+  background: linear-gradient(var(--background), var(--background)) padding-box,
+    linear-gradient(45deg, hsl(248, 53%, 58%), hsl(16, 100%, 66%)) border-box;
+  border: 3px solid transparent;
+  border-radius: 50px;
+  box-shadow: hsla(0, 0%, 0%, 0.15) 0px 2px 8px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  cursor: pointer;
+
+  &:hover {
+    background: linear-gradient(var(--wrapper), var(--wrapper)) padding-box,
+    linear-gradient(45deg, hsl(248, 53%, 58%), hsl(16, 100%, 66%)) border-box;
+  }
+}

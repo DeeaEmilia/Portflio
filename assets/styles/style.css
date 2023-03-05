@@ -1,0 +1,195 @@
+@font-face {
+  font-family: "Raleway";
+  src: url(../fonts/Raleway-Regular.woff2);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Raleway", sans-serif;
+}
+
+body {
+  line-height: 1.5;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  margin: 1rem;
+}
+
+nav {
+  background-color: var(--nav);
+  border-radius: 1.5rem;
+  box-shadow: hsla(0, 0%, 0%, 0.15) 0px 2px 8px;
+}
+nav ul {
+  display: flex;
+  flex-direction: row;
+  margin: 1rem;
+}
+nav ul li {
+  margin: 0 0.2rem;
+}
+nav ul li a {
+  color: var(--font);
+  font-weight: bold;
+  padding: 1rem;
+  transition: 500ms ease-in;
+}
+nav ul li a:hover, nav ul li a:focus {
+  background-color: var(--wrapper);
+  border-radius: 1rem;
+  padding: 0.5rem 1rem;
+  transition: 500ms ease-in;
+}
+
+button {
+  font-size: 1rem;
+  font-weight: bold;
+  color: var(--font);
+  padding: 1rem;
+  border: solid 2px;
+  background: linear-gradient(var(--background), var(--background)) padding-box, linear-gradient(45deg, hsl(248, 53%, 58%), hsl(16, 100%, 66%)) border-box;
+  border: 3px solid transparent;
+  border-radius: 50px;
+  box-shadow: hsla(0, 0%, 0%, 0.15) 0px 2px 8px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  cursor: pointer;
+}
+button:hover {
+  background: linear-gradient(var(--wrapper), var(--wrapper)) padding-box, linear-gradient(45deg, hsl(248, 53%, 58%), hsl(16, 100%, 66%)) border-box;
+}
+
+:root {
+  --background: hsl(0, 0%, 91%);
+  --wrapper: hsl(0, 0%, 100%);
+  --font: hsl(0, 0%, 24%);
+  --nav: hsl(0, 0%, 88%);
+  --light: hsl(0, 0%, 80%);
+  --white: hsl(0, 0%, 100%);
+  --linkedin: hsl(220, 61%, 50%);
+  --github: hsl(210, 12%, 19%);
+}
+
+body {
+  height: 100%;
+  margin: 3rem;
+  background-color: var(--background);
+  color: var(--font);
+}
+
+.theme-switch {
+  display: inline-block;
+  height: 2.5rem;
+  position: relative;
+  width: 4.5rem;
+}
+.theme-switch input {
+  display: none;
+}
+
+.theme-switch .slider {
+  background-color: hsl(0, 0%, 80%);
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 0;
+  cursor: pointer;
+  position: absolute;
+  transition: 0.4s;
+}
+.theme-switch .slider:before {
+  background-color: hsl(0, 0%, 100%);
+  left: 0.2rem;
+  top: 0.25rem;
+  content: "";
+  height: 2rem;
+  position: absolute;
+  transition: 0.4s;
+  width: 2rem;
+}
+
+.theme-switch input:checked + .slider {
+  background-color: hsl(0, 0%, 24%);
+}
+
+.theme-switch input:checked + .slider:before {
+  transform: translateX(26px);
+}
+
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+.wrapper {
+  background-color: var(--wrapper);
+  border-radius: 1.5rem;
+  padding: 2rem;
+  margin: 1rem;
+  height: -moz-fit-content;
+  height: fit-content;
+  box-shadow: hsla(0, 0%, 0%, 0.15) 0px 2px 8px;
+}
+
+.main-content {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.about {
+  max-width: 80ch;
+}
+
+.media {
+  display: flex;
+  justify-content: center;
+  min-width: 16rem;
+  transition: 500ms;
+}
+.media img {
+  height: 10rem;
+  width: 10rem;
+}
+.media:hover {
+  filter: brightness(150%);
+  cursor: pointer;
+  transition: 500ms;
+}
+
+.linkedin-container {
+  background-color: var(--linkedin);
+}
+
+.github-container {
+  background-color: var(--github);
+}
+
+.learning-path h2 {
+  margin-bottom: 1rem;
+}
+.learning-path h3 {
+  font-weight: 300;
+  font-size: 1rem;
+}
+.learning-path span {
+  font-style: italic;
+}/*# sourceMappingURL=style.css.map */

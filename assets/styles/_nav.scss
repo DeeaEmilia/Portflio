@@ -1,0 +1,35 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  margin: 1rem;
+}
+
+nav {
+  background-color: var(--nav);
+  border-radius: 1.5rem;
+  box-shadow: hsla(0, 0%, 0%, 0.15) 0px 2px 8px;
+
+  ul {
+    display: flex;
+    flex-direction: row;
+    margin: 1rem;
+
+    li {
+        margin: 0 0.2rem;
+
+      a {
+        color: var(--font);
+        font-weight: bold;
+        padding: 1rem;
+        transition: 500ms ease-in;
+
+        &:hover, &:focus {
+          background-color: var(--wrapper);
+          border-radius: 1rem;
+          padding: 0.5rem 1rem;
+          transition: 500ms ease-in;
+        }
+      }
+    }
+  }
+}

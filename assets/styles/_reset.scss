@@ -1,0 +1,27 @@
+@font-face {
+  font-family: 'Raleway';
+  src: url(../fonts/Raleway-Regular.woff2);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  html {
+    font-family: 'Raleway', sans-serif;
+  }
+  
+  body {
+    line-height: 1.5;
+  }
+
+  ul {
+    list-style: none;
+  }
+
+  a {
+    text-decoration: none;
+  }
+

@@ -1,0 +1,129 @@
+@import 'reset';
+@import 'nav';
+@import 'button';
+
+:root {
+  --background: hsl(0, 0%, 91%);
+  --wrapper: hsl(0, 0%, 100%);
+  --font: hsl(0, 0%, 24%);
+  --nav: hsl(0, 0%, 88%);
+  --light: hsl(0, 0%, 80%);
+  --white: hsl(0, 0%, 100%);
+  --linkedin: hsl(220, 61%, 50%);
+  --github: hsl(210, 12%, 19%);
+}
+
+body {
+  height: 100%;
+  margin: 3rem;
+  background-color: var(--background);
+  color: var(--font);
+}
+
+.theme-switch {
+  display: inline-block;
+  height: 2.5rem;
+  position: relative;
+  width: 4.5rem;
+
+  input {
+  display: none;
+}
+}
+
+.theme-switch 
+
+.slider {
+  background-color: hsl(0, 0%, 80%);
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 0;
+  cursor: pointer;
+  position: absolute;
+  transition: 0.4s;
+
+  &:before {
+    background-color: hsl(0, 0%, 100%);
+    left: 0.2rem;
+    top: 0.25rem;
+    content: '';
+    height: 2rem;
+    position: absolute;
+    transition: 0.4s;
+    width: 2rem;
+  }
+}
+
+.theme-switch input:checked + .slider {
+  background-color: hsl(0, 0%, 24%);
+}
+
+.theme-switch input:checked + .slider:before {
+  transform: translateX(26px);
+}
+
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+.wrapper {
+  background-color: var(--wrapper);
+  border-radius: 1.5rem;
+  padding: 2rem;
+  margin: 1rem;
+  height: fit-content;
+  box-shadow: hsla(0, 0%, 0%, 0.15) 0px 2px 8px;
+}
+
+.main-content {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.about {
+  max-width: 80ch;
+}
+
+.media {
+  display: flex;
+  justify-content: center;
+  min-width: 16rem;
+  transition: 500ms;
+
+  img {
+    height: 10rem;
+    width: 10rem;
+  }
+
+  &:hover {
+    filter: brightness(150%);
+    cursor: pointer;
+    transition: 500ms;
+  }
+}
+
+.linkedin-container {
+  background-color: var(--linkedin);
+}
+
+.github-container {
+  background-color: var(--github);
+}
+
+.learning-path {
+  h2 {
+    margin-bottom: 1rem;
+  }
+  h3 {
+    font-weight: 300;
+    font-size: 1rem;
+  }
+  span {
+    font-style: italic;
+  }
+}
