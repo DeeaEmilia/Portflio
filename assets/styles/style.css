@@ -12,10 +12,6 @@ html {
   font-family: "Raleway", sans-serif;
 }
 
-body {
-  line-height: 1.5;
-}
-
 ul {
   list-style: none;
 }
@@ -140,16 +136,6 @@ body {
   border-radius: 50%;
 }
 
-.wrapper {
-  background-color: var(--wrapper);
-  border-radius: 1.5rem;
-  padding: 2rem;
-  margin: 1rem;
-  height: -moz-fit-content;
-  height: fit-content;
-  box-shadow: hsla(0, 0%, 0%, 0.15) 0px 2px 8px;
-}
-
 .main-content {
   display: flex;
   flex-wrap: wrap;
@@ -159,20 +145,41 @@ body {
   max-width: 80ch;
 }
 
+.wrapper {
+  background-color: var(--wrapper);
+  border-radius: 1rem;
+  padding: 2rem;
+  margin: 1rem;
+  height: -moz-fit-content;
+  height: fit-content;
+  box-shadow: hsla(0, 0%, 0%, 0.15) 0px 2px 8px;
+}
+
 .media {
   display: flex;
   justify-content: center;
-  min-width: 16rem;
   transition: 500ms;
 }
 .media img {
-  height: 10rem;
   width: 10rem;
 }
 .media:hover {
-  filter: brightness(150%);
+  filter: brightness(120%);
   cursor: pointer;
   transition: 500ms;
+}
+
+.picture-container {
+  height: 14rem;
+  width: 14rem;
+  background-image: url(../images/Deea.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  box-shadow: hsla(0, 0%, 0%, 0.15) 0px 2px 8px;
+}
+.picture-container:hover {
+  filter: brightness(110%);
+  cursor: auto;
 }
 
 .linkedin-container {
