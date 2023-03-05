@@ -20,7 +20,7 @@ This is my personal portfolio website, where I showcase my skills, experience an
 
 You can view a live demo of my portfolio website at the following link:
 
-TBA
+https://andreea-emilia-duta.netlify.app
 
 ## Technologies Used
 
