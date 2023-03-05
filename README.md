@@ -1,5 +1,7 @@
 # My Portfolio Website
 
+This is still a work in progress!
+
 This is my personal portfolio website, where I showcase my skills, experience and projects as a junior front-end developer.
 
 ## Table of Contents
