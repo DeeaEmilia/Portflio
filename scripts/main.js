@@ -25,4 +25,5 @@ const toggleSwitch = document.querySelector(
     }
   }
   
-  toggleSwitch.addEventListener('change', switchTheme);
+toggleSwitch.addEventListener('change', switchTheme);
+  

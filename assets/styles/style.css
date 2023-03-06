@@ -58,7 +58,7 @@ button {
   color: var(--font);
   padding: 1rem 2rem;
   border: solid 0.2rem;
-  background: linear-gradient(var(--background), var(--background)) padding-box, linear-gradient(45deg, hsl(248, 53%, 58%), hsl(16, 100%, 66%)) border-box;
+  background: linear-gradient(var(--background), var(--background)) padding-box, linear-gradient(45deg, var(--purple), var(--orange)) border-box;
   border: 3px solid transparent;
   border-radius: 50px;
   box-shadow: hsla(0, 0%, 0%, 0.15) 0px 2px 8px;
@@ -68,7 +68,7 @@ button {
   cursor: pointer;
 }
 button:hover {
-  background: linear-gradient(var(--wrapper), var(--wrapper)) padding-box, linear-gradient(45deg, hsl(16, 100%, 66%), hsl(248, 53%, 58%)) border-box;
+  background: linear-gradient(var(--wrapper), var(--wrapper)) padding-box, linear-gradient(45deg, var(--purple), var(--orange)) border-box;
 }
 
 .grid-col-span-2 {
@@ -86,8 +86,11 @@ button:hover {
   --nav: hsl(0, 0%, 88%);
   --light: hsl(0, 0%, 80%);
   --white: hsl(0, 0%, 100%);
+  --purple: hsl(248, 53%, 58%);
+  --orange: hsl(16, 100%, 66%);
   --linkedin: hsl(220, 61%, 50%);
   --github: hsl(210, 12%, 19%);
+  --javascript: hsl(53, 93%, 54%);
 }
 
 body {
@@ -152,6 +155,20 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
+}
+.wrapper a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: var(--font);
+}
+.wrapper a:hover {
+  color: var(--orange);
+}
+.wrapper a h3 {
+  margin-top: 0.5rem;
 }
 .wrapper img {
   width: 10rem;
@@ -162,6 +179,30 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
+}
+.about.wrapper .about-name {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+.about.wrapper h1 {
+  background: -webkit-linear-gradient(45deg, var(--purple), var(--orange));
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.about.wrapper .about-body {
+  margin-top: 2rem;
+}
+.about.wrapper .contact-btn {
+  margin-top: 3rem;
+}
+
+.about-me {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  width: 100%;
 }
 
 .picture-container {
@@ -177,7 +218,7 @@ body {
   background-repeat: no-repeat;
   box-shadow: hsla(0, 0%, 0%, 0.15) 0px 2px 8px;
   border-radius: 20rem;
-  margin: 1rem;
+  margin: 0 3rem;
 }
 
 .linkedin-container {
@@ -217,4 +258,12 @@ body {
 }
 .learning-path span {
   font-style: italic;
+}
+
+.javascript-container {
+  background-color: var(--javascript);
+}
+
+.node-container {
+  background-color: var(--white);
 }/*# sourceMappingURL=style.css.map */
