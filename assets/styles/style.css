@@ -23,7 +23,7 @@ a {
 header {
   display: flex;
   justify-content: space-between;
-  margin: 1rem;
+  margin: 1rem 1rem 6rem;
 }
 
 nav {
@@ -56,8 +56,8 @@ button {
   font-size: 1rem;
   font-weight: bold;
   color: var(--font);
-  padding: 1rem;
-  border: solid 2px;
+  padding: 1rem 2rem;
+  border: solid 0.2rem;
   background: linear-gradient(var(--background), var(--background)) padding-box, linear-gradient(45deg, hsl(248, 53%, 58%), hsl(16, 100%, 66%)) border-box;
   border: 3px solid transparent;
   border-radius: 50px;
@@ -69,6 +69,14 @@ button {
 }
 button:hover {
   background: linear-gradient(var(--wrapper), var(--wrapper)) padding-box, linear-gradient(45deg, hsl(16, 100%, 66%), hsl(248, 53%, 58%)) border-box;
+}
+
+.grid-col-span-2 {
+  grid-column: span 2;
+}
+
+.grid-row-span-2 {
+  grid-row: span 2;
 }
 
 :root {
@@ -98,7 +106,6 @@ body {
 .theme-switch input {
   display: none;
 }
-
 .theme-switch .slider {
   background-color: hsl(0, 0%, 80%);
   bottom: 0;
@@ -132,30 +139,37 @@ body {
 
 .main-content {
   display: grid;
-}
-
-.about {
-  max-width: 80ch;
-  flex-direction: column;
+  gap: 2rem;
+  grid-template-columns: repeat(4, 1fr);
 }
 
 .wrapper {
   background-color: var(--wrapper);
   border-radius: 1rem;
   padding: 2rem;
-  margin: 1rem;
-  height: -moz-fit-content;
-  height: fit-content;
   box-shadow: hsla(0, 0%, 0%, 0.15) 0px 2px 8px;
+  transition: 500ms;
   display: flex;
   justify-content: center;
-  transition: 500ms;
+  align-items: center;
 }
 .wrapper img {
   width: 10rem;
+  height: 10rem;
+}
+
+.about.wrapper {
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
 }
 
 .picture-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.picture-container .picture {
   height: 14rem;
   width: 14rem;
   background-image: url(../images/Deea.jpg);
