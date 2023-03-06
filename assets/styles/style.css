@@ -23,7 +23,7 @@ a {
 header {
   display: flex;
   justify-content: space-between;
-  margin: 1rem 1rem 6rem;
+  margin: 1rem 0 6rem;
 }
 
 nav {
@@ -34,70 +34,97 @@ nav {
 nav ul {
   display: flex;
   flex-direction: row;
-  margin: 1rem;
+  padding: 0.5rem;
 }
 nav ul li {
-  margin: 0 0.2rem;
-}
-nav ul li a {
   color: var(--font);
   font-weight: bold;
-  padding: 1rem;
-  transition: 500ms ease-in;
-}
-nav ul li a:hover, nav ul li a:focus {
-  background-color: var(--wrapper);
   border-radius: 1rem;
   padding: 0.5rem 1rem;
   transition: 500ms ease-in;
+  margin: 0 0.2rem;
+}
+nav ul li:hover, nav ul li:focus {
+  background-color: var(--card);
+  border-radius: 1rem;
+  padding: 0.5rem 1rem;
+  transition: 500ms ease-in;
+  cursor: pointer;
+  margin: 0 0.2rem;
 }
 
-button {
+.btn {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
   font-size: 1rem;
   font-weight: bold;
   color: var(--font);
   padding: 1rem 2rem;
-  border: solid 0.2rem;
   background: linear-gradient(var(--background), var(--background)) padding-box, linear-gradient(45deg, var(--purple), var(--orange)) border-box;
   border: 3px solid transparent;
   border-radius: 50px;
   box-shadow: hsla(0, 0%, 0%, 0.15) 0px 2px 8px;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
   cursor: pointer;
 }
-button:hover {
-  background: linear-gradient(var(--wrapper), var(--wrapper)) padding-box, linear-gradient(45deg, var(--purple), var(--orange)) border-box;
+.btn:hover {
+  background: linear-gradient(var(--card), var(--card)) padding-box, linear-gradient(45deg, var(--purple), var(--orange)) border-box;
 }
 
 .grid-col-span-2 {
   grid-column: span 2;
 }
 
+.grid-col-span-3 {
+  grid-column: span 3;
+}
+
+.grid-col-span-4 {
+  grid-column: span 4;
+}
+
+.grid-col-span-5 {
+  grid-column: span 5;
+}
+
+.grid-col-span-6 {
+  grid-column: span 6;
+}
+
+.grid-col-span-7 {
+  grid-column: span 7;
+}
+
+.grid-col-span-8 {
+  grid-column: span 8;
+}
+
 .grid-row-span-2 {
   grid-row: span 2;
 }
 
-:root {
-  --background: hsl(0, 0%, 91%);
-  --wrapper: hsl(0, 0%, 100%);
-  --font: hsl(0, 0%, 24%);
-  --nav: hsl(0, 0%, 88%);
-  --light: hsl(0, 0%, 80%);
-  --white: hsl(0, 0%, 100%);
-  --purple: hsl(248, 53%, 58%);
-  --orange: hsl(16, 100%, 66%);
-  --linkedin: hsl(220, 61%, 50%);
-  --github: hsl(210, 12%, 19%);
-  --javascript: hsl(53, 93%, 54%);
+.grid-row-span-3 {
+  grid-row: span 3;
 }
 
-body {
-  height: 100%;
-  margin: 3rem;
-  background-color: var(--background);
-  color: var(--font);
+.grid-row-span-4 {
+  grid-row: span 4;
+}
+
+.grid-row-span-5 {
+  grid-row: span 5;
+}
+
+.grid-row-span-6 {
+  grid-row: span 6;
+}
+
+.grid-row-span-7 {
+  grid-row: span 7;
+}
+
+.grid-row-span-8 {
+  grid-row: span 8;
 }
 
 .theme-switch {
@@ -140,61 +167,49 @@ body {
   transform: translateX(26px);
 }
 
-.main-content {
-  display: grid;
-  gap: 2rem;
-  grid-template-columns: repeat(4, 1fr);
-}
-
-.wrapper {
-  background-color: var(--wrapper);
-  border-radius: 1rem;
-  padding: 2rem;
-  box-shadow: hsla(0, 0%, 0%, 0.15) 0px 2px 8px;
-  transition: 500ms;
+.card {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  background-color: var(--card);
+  border-radius: 1rem;
+  padding: 2rem;
+  box-shadow: hsla(0, 0%, 0%, 0.15) 0px 2px 8px;
+  transition: 500ms;
+  text-align: center;
 }
-.wrapper a {
+.card a {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   color: var(--font);
 }
-.wrapper a:hover {
+.card a:hover {
   color: var(--orange);
 }
-.wrapper a h3 {
+.card a h3 {
   margin-top: 0.5rem;
 }
-.wrapper img {
-  width: 10rem;
-  height: 10rem;
+.card img {
+  width: 5rem;
+  height: 5rem;
 }
 
-.about.wrapper {
-  flex-direction: column;
-  justify-content: center;
+#about {
   align-items: flex-start;
+  text-align: left;
 }
-.about.wrapper .about-name {
+#about .about-name {
   font-size: 1.2rem;
   font-weight: 600;
   margin-bottom: 1rem;
 }
-.about.wrapper h1 {
-  background: -webkit-linear-gradient(45deg, var(--purple), var(--orange));
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-.about.wrapper .about-body {
+#about .about-body {
   margin-top: 2rem;
 }
-.about.wrapper .contact-btn {
+#about .btn {
   margin-top: 3rem;
 }
 
@@ -205,12 +220,12 @@ body {
   width: 100%;
 }
 
-.picture-container {
+#picture-container {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.picture-container .picture {
+#picture-container .picture {
   height: 14rem;
   width: 14rem;
   background-image: url(../images/Deea.jpg);
@@ -221,49 +236,101 @@ body {
   margin: 0 3rem;
 }
 
-.linkedin-container {
+#linkedin-container {
   background-color: var(--linkedin);
 }
-.linkedin-container:hover {
-  filter: brightness(120%);
-  cursor: pointer;
-  transition: 500ms;
+#linkedin-container h3 {
+  color: var(--white);
+}
+#linkedin-container h3:hover {
+  color: var(--orange);
 }
 
-.github-container {
+#github-container {
   background-color: var(--github);
 }
-.github-container:hover {
+#github-container:hover {
+  filter: brightness(120%);
+  cursor: pointer;
+  transition: 500ms;
+}
+#github-container h3 {
+  color: var(--white);
+}
+#github-container h3:hover {
+  color: var(--orange);
+}
+
+#leetcode-container:hover {
   filter: brightness(120%);
   cursor: pointer;
   transition: 500ms;
 }
 
-.leetcode-container:hover {
-  filter: brightness(120%);
-  cursor: pointer;
-  transition: 500ms;
-}
-
-.learning-path {
+#learning-path {
   flex-direction: column;
   align-items: center;
+  text-align: left;
 }
-.learning-path h2 {
+#learning-path h2 {
   margin-bottom: 1rem;
 }
-.learning-path h3 {
+#learning-path h3 {
   font-weight: 300;
   font-size: 1rem;
 }
-.learning-path span {
+#learning-path span {
   font-style: italic;
 }
 
-.javascript-container {
+#javascript-container {
   background-color: var(--javascript);
 }
+#javascript-container h3 {
+  color: var(--black);
+}
 
-.node-container {
+#node-container {
   background-color: var(--white);
+}
+#node-container h3 {
+  color: var(--black);
+}
+
+#form-container {
+  text-align: left;
+}
+
+:root {
+  --background: hsl(0, 0%, 91%);
+  --card: hsl(0, 0%, 100%);
+  --font: hsl(0, 0%, 24%);
+  --nav: hsl(0, 0%, 88%);
+  --light: hsl(0, 0%, 80%);
+  --white: hsl(0, 0%, 100%);
+  --black: hsl(0, 0%, 0%);
+  --purple: hsl(248, 53%, 58%);
+  --orange: hsl(16, 100%, 66%);
+  --linkedin: hsl(220, 61%, 50%);
+  --github: hsl(210, 12%, 19%);
+  --javascript: hsl(53, 93%, 54%);
+}
+
+body {
+  margin: 3rem 10rem;
+  background-color: var(--background);
+  color: var(--font);
+}
+
+.main-content {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(8, 1fr);
+}
+
+h1 {
+  background: -webkit-linear-gradient(45deg, var(--purple), var(--orange));
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
 }/*# sourceMappingURL=style.css.map */
