@@ -30,6 +30,7 @@ body {
   display: grid;
   gap: 2rem;
   grid-template-columns: repeat(8, 1fr);
+  overflow: hidden;
 }
 
 h1 {
@@ -37,4 +38,13 @@ h1 {
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+.active {
+  display: block;
+  background-color: aqua;
+}
+
+.show {
+  display: flex;
 }

@@ -1,5 +1,5 @@
 .card {
-  display: flex;
+  display: none;
   justify-content: center;
   align-items: center;
   flex-direction: column;
@@ -18,9 +18,9 @@
     color: var(--font);
 
     &:hover {
-      color: var(--orange);
+      color: var(--orange); 
     }
-
+    
     h3 {
       margin-top: 0.5rem;
     }
@@ -31,6 +31,7 @@
     height: 5rem;
   }
 }
+
 
 #about {
   align-items: flex-start;

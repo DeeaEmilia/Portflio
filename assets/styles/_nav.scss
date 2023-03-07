@@ -15,22 +15,21 @@ nav {
     padding: 0.5rem;
 
     li {
-        color: var(--font);
-        font-weight: bold;
+      color: var(--font);
+      font-weight: bold;
+      border-radius: 1rem;
+      padding: 0.5rem 1rem;
+      transition: 500ms ease-in;
+      margin: 0 0.2rem;
+
+      &:hover,
+      &:focus {
+        background-color: var(--card);
         border-radius: 1rem;
         padding: 0.5rem 1rem;
         transition: 500ms ease-in;
+        cursor: pointer;
         margin: 0 0.2rem;
-
-        &:hover,
-        &:focus {
-          background-color: var(--card);
-          border-radius: 1rem;
-          padding: 0.5rem 1rem;
-          transition: 500ms ease-in;
-          cursor: pointer;
-          margin: 0 0.2rem;
-   
       }
     }
   }
