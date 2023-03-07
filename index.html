@@ -27,11 +27,11 @@
       </div>
       <nav>
         <ul id="filter-list">
-          <li class="filter active" onclick="filterSelection('all')">All</li>
-          <li class="filter" onclick="filterSelection('about')">About</li>
-          <li class="filter" onclick="filterSelection('skills')">Skills</li>
-          <li class="filter" onclick="filterSelection('projects')">Projects</li>
-          <li class="filter" onclick="filterSelection('certifications')">Certifications</li>
+          <li class="filter active" data-filter="all">All</li>
+          <li class="filter" data-filter="about">About</li>
+          <li class="filter" data-filter="skills">Skills</li>
+          <li class="filter" data-filter="projects">Projects</li>
+          <li class="filter" data-filter="certifications">Certifications</li>
         </ul>
       </nav>
       <div class="contact">
@@ -159,6 +159,10 @@
         </a>
       </div>
 
+      <div id="weather" class="card projects grid-col-span-2 grid-row-span-4">
+        <h3>Weather App</h3>
+      </div>
+
       <div id="html-container" class="card skills">
         <img src="assets/images/html5.svg" alt="" />
         <h3>HTML</h3>
@@ -194,9 +198,8 @@
         <h3>Node.js</h3>
       </div>
 
-      <div class="card projects grid-row-span-2">Project 1</div>
-      <div class="card projects grid-col-span-2 grid-row-span-2">
-        <img src="assets/images/" alt="" />
+      
+      <div id="heroes-arena" class="card projects grid-col-span-2 grid-row-span-3">
         <h3>Heroes Arena</h3>
       </div>
       <div class="card projects grid-col-span-2">Project 3</div>
@@ -216,8 +219,15 @@
       <div id="figma-container" class="card skills certifications">
         <img src="assets/images/figma.svg" alt="" />
         <h3>Figma</h3>
+      </div><div id="figma-container" class="card skills certifications">
+        <img src="assets/images/figma.svg" alt="" />
+        <h3>Bootstrap</h3>
       </div>
-      <div id="form-container" class="card about projects certifications grid-col-span-5 grid-row-span-4">
+      <div id="figma-container" class="card skills certifications">
+        <img src="assets/images/figma.svg" alt="" />
+        <h3>Tailwind</h3>
+      </div>
+      <div id="form-container" class="card about certifications grid-col-span-5 grid-row-span-4">
         <h3>Contact Me Form</h3>
         <p>
           Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quam

@@ -1,48 +1,49 @@
 filterSelection('all');
 
-function filterSelection(c) {
-  let x = document.getElementsByClassName('card');
-  if (c == 'all') { c = ''; }
-  // Add the "show" class (display:block) to the filtered elements, and remove the "show" class from the elements that are not selected
-  for (let i = 0; i < x.length; i++) {
-    removeClass(x[i], 'show');
-    if (x[i].className.indexOf(c) > -1) addClass(x[i], 'show');
-  }
-  
-}
+// Filter the card elements based on the active category
+function filterSelection(category) {
+  const cards = document.getElementsByClassName('card');
 
-// Show filtered elements
-function addClass(element, name) {
-  let arr1 = element.className.split(' ');
-  let arr2 = name.split(' ');
-  for (let i = 0; i < arr2.length; i++) {
-    if (arr1.indexOf(arr2[i]) == -1) {
-      element.className += ' ' + arr2[i];
+  // Add the 'show' class to the filtered elements, and remove it from the elements that are not selected
+  for (let i = 0; i < cards.length; i++) {
+    const card = cards[i];
+    if (category === 'all' || card.classList.contains(category)) {
+      addClass(card, 'show');
+    } else {
+      removeClass(card, 'show');
     }
   }
 }
 
-// Hide elements that are not selected
-function removeClass(element, name) {
-  let arr1 = element.className.split(' ');
-  let arr2 = name.split(' ');
-  for (let i = 0; i < arr2.length; i++) {
-    while (arr1.indexOf(arr2[i]) > -1) {
-      arr1.splice(arr1.indexOf(arr2[i]), 1);
-    }
-  }
-  element.className = arr1.join(' ');
+// Add the 'show' class to the element and trigger the transition effect
+function addClass(element, className) {
+  element.classList.add(className);
+  element.offsetWidth; // trigger a reflow to ensure the transition is applied
+  element.classList.add('show');
 }
 
-// Add active class to the current control button (highlight it)
-let filterList = document.getElementById('filter-list');
-let filterItems = filterList.getElementsByClassName('filter');
+// Remove the 'show' class from the element and trigger the transition effect
+function removeClass(element, className) {
+  element.classList.remove('show');
+  element.offsetWidth; // trigger a reflow to ensure the transition is applied
+  element.classList.remove(className);
+}
+
+// Add an event listener to each filter item that calls the filterSelection function with the category
+const filterList = document.getElementById('filter-list');
+const filterItems = filterList.querySelectorAll('.filter');
 for (let i = 0; i < filterItems.length; i++) {
-  filterItems[i].addEventListener('click', function () {
-    let current = document.getElementsByClassName('active');
-    current[0].className = current[0].className.replace(' active', '');
-    this.className += ' active';
+  const filterItem = filterItems[i];
+  filterItem.addEventListener('click', function() {
+    const category = filterItem.getAttribute('data-filter');
+    filterSelection(category);
+
+    // Add the 'active' class to the clicked filter item and remove it from the others
+    const activeFilter = filterList.querySelector('.filter.active');
+    activeFilter.classList.remove('active');
+    filterItem.classList.add('active');
   });
 }
+
 
 

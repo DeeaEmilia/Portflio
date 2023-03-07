@@ -7,7 +7,6 @@
   border-radius: 1rem;
   padding: 2rem;
   box-shadow: hsla(0, 0%, 0%, 0.15) 0px 2px 8px;
-  transition: 500ms;
   text-align: center;
 
   a {
@@ -18,9 +17,9 @@
     color: var(--font);
 
     &:hover {
-      color: var(--orange); 
+      color: var(--orange);
     }
-    
+
     h3 {
       margin-top: 0.5rem;
     }
@@ -31,7 +30,6 @@
     height: 5rem;
   }
 }
-
 
 #about {
   align-items: flex-start;
@@ -151,4 +149,39 @@
 
 #form-container {
   text-align: left;
+}
+
+#heroes-arena {
+  background-image: url(../images/Heroes-Arena.png);
+}
+
+#weather {
+  background-image: url(../images/weather.png);
+}
+
+.projects {
+  background-size: cover;
+  background-position: center;
+  background-color: hsla(0, 0%, 1%, 0.6);
+  background-blend-mode: multiply;
+  opacity: 0.9;
+
+  h3 {
+    font-size: 2rem;
+    font-weight: bolder;
+    background-color:hsl(0, 0%, 100%);
+    width:100%;
+    color: black;
+    border-radius: 0.5rem;
+  }
+
+  &:hover {
+    background-color: transparent;
+    background-blend-mode: multiply;
+    opacity: 1;
+
+    h3 {
+      visibility: hidden;
+    }
+  }
 }
