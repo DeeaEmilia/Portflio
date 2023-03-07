@@ -19,7 +19,7 @@ nav {
       font-weight: bold;
       border-radius: 1rem;
       padding: 0.5rem 1rem;
-      transition: 500ms ease-in;
+      transition: 250ms ease-in;
       margin: 0 0.2rem;
 
       &:hover,
@@ -27,7 +27,7 @@ nav {
         background-color: var(--card);
         border-radius: 1rem;
         padding: 0.5rem 1rem;
-        transition: 500ms ease-in;
+        transition: 250ms ease-in;
         cursor: pointer;
         margin: 0 0.2rem;
       }

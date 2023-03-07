@@ -41,14 +41,14 @@ nav ul li {
   font-weight: bold;
   border-radius: 1rem;
   padding: 0.5rem 1rem;
-  transition: 500ms ease-in;
+  transition: 250ms ease-in;
   margin: 0 0.2rem;
 }
 nav ul li:hover, nav ul li:focus {
   background-color: var(--card);
   border-radius: 1rem;
   padding: 0.5rem 1rem;
-  transition: 500ms ease-in;
+  transition: 250ms ease-in;
   cursor: pointer;
   margin: 0 0.2rem;
 }
@@ -326,7 +326,6 @@ body {
   display: grid;
   gap: 2rem;
   grid-template-columns: repeat(8, 1fr);
-  overflow: hidden;
 }
 
 h1 {
@@ -337,8 +336,7 @@ h1 {
 }
 
 .active {
-  display: block;
-  background-color: aqua;
+  background-color: var(--card);
 }
 
 .show {

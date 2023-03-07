@@ -1,210 +1,242 @@
 <!DOCTYPE html>
 <html lang="en-RO">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="Welcome to my portfolio! As a junior front-end developer, I specialize in creating responsive and user-friendly websites. Browse my projects and see how I can bring your ideas to life!"
-    />
-    <meta
-      name="keywords"
-      content="front-end development, web design, HTML, CSS, JavaScript, responsive design, user experience, portfolio"
-    />
-    <meta name="author" content="Andreea-Emilia Duta" />
-    <meta name="robots" content="index, follow" />
-    <link rel="stylesheet" href="assets/styles/style.css" />
-    <link rel="stylesheet" href="" id="darkmode" />
-    <title>Andreea-Emilia Duta Portfolio</title>
-  </head>
 
-  <body>
-    <div class="container">
-      <header>
-        <div class="switch">
-          <label for="checkbox" class="theme-switch">
-            <input type="checkbox" id="checkbox" />
-            <div class="slider"></div>
-          </label>
-        </div>
-        <nav>
-         
-            <ul id="filter-list">
-              <li class="filter active" onclick="filterSelection('all')">
-                All
-              </li>
-              <li class="filter" onclick="filterSelection('about')">About</li>
-              <li class="filter" onclick="filterSelection('skills')"> 
-                Skills
-              </li>
-              <li class="filter" onclick="filterSelection('projects')"> 
-                Projects
-              </li>
-              <li class="filter" onclick="filterSelection('certifications')"> 
-                Certifications
-              </li>
-            </ul>
-      
-        </nav>
-        <div class="contact">
-          <button class="btn" href="mailto:deeaemiliad@gmail.com">
-            Contact
-          </button>
-        </div>
-      </header>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="Welcome to my portfolio! As a junior front-end developer, I specialize in creating responsive and user-friendly websites. Browse my projects and see how I can bring your ideas to life!" />
+  <meta name="keywords"
+    content="front-end development, web design, HTML, CSS, JavaScript, responsive design, user experience, portfolio" />
+  <meta name="author" content="Andreea-Emilia Duta" />
+  <meta name="robots" content="index, follow" />
+  <link rel="stylesheet" href="assets/styles/style.css" />
+  <link rel="stylesheet" href="" id="darkmode" />
+  <title>Andreea-Emilia Duta Portfolio</title>
+</head>
 
-      <main class="main-content">
-        <div id="about" class="card about grid-col-span-4 grid-row-span-3">
-          <div class="about-me">
-            <div>
-              <p class="about-name">Hello! My name is</p>
-              <h1>Andreea-Emilia Duta</h1>
-            </div>
-            <div id="picture-container">
-              <div class="picture"></div>
-            </div>
+<body>
+  <div class="container">
+    <header>
+      <div class="switch">
+        <label for="checkbox" class="theme-switch">
+          <input type="checkbox" id="checkbox" />
+          <div class="slider"></div>
+        </label>
+      </div>
+      <nav>
+        <ul id="filter-list">
+          <li class="filter active" onclick="filterSelection('all')">All</li>
+          <li class="filter" onclick="filterSelection('about')">About</li>
+          <li class="filter" onclick="filterSelection('skills')">Skills</li>
+          <li class="filter" onclick="filterSelection('projects')">Projects</li>
+          <li class="filter" onclick="filterSelection('certifications')">Certifications</li>
+        </ul>
+      </nav>
+      <div class="contact">
+        <button class="btn">Contact</button>
+      </div>
+    </header>
+
+    <main class="main-content">
+      <div id="about" class="card about grid-col-span-4 grid-row-span-3">
+        <div class="about-me">
+          <div>
+            <p class="about-name">Hello! My name is</p>
+            <h1>Andreea-Emilia Duta</h1>
           </div>
-          <p class="about-body">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad dolorum
-            quos fugit cum debitis qui quas, sed beatae rem, sit eius quibusdam
-            accusantium, vel libero in consectetur natus quae temporibus rerum?
-            Dignissimos quaerat dolor ducimus corporis! Iusto esse molestiae
-            eaque id eum blanditiis aspernatur odit, at dolorum itaque. Est,
-            earum.
-          </p>
-          <button class="btn">Contact</button>
+          <div id="picture-container">
+            <div class="picture"></div>
+          </div>
         </div>
+        <p class="about-body">
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad dolorum
+          quos fugit cum debitis qui quas, sed beatae rem, sit eius quibusdam
+          accusantium, vel libero in consectetur natus quae temporibus rerum?
+          Dignissimos quaerat dolor ducimus corporis! Iusto esse molestiae
+          eaque id eum blanditiis aspernatur odit, at dolorum itaque. Est,
+          earum.
+        </p>
+        <button class="btn">Download CV</button>
+      </div>
 
-        
+      <div id="learning-path" class="card skills about grid-row-span-3 grid-col-span-2">
+        <h2>Learning Path</h2>
+        <ul>
+          <li>
+            <h3>&#9745;&#65039; HTML Basics</h3>
+          </li>
+          <li>
+            <h3>&#9745;&#65039; CSS Basics</h3>
+          </li>
+          <li>
+            <h3>&#9745;&#65039; JavaScript Basics</h3>
+          </li>
+          <li>
+            <h3>&#9745;&#65039; SASS</h3>
+          </li>
+          <li>
+            <h3>&#9745;&#65039; Bootstrap</h3>
+          </li>
+          <li>
+            <h3>&#9745;&#65039; Tailwind</h3>
+          </li>
+          <li>
+            <h3>&#9745;&#65039; Responsive Design</h3>
+          </li>
+          <li>
+            <h3>&#9745;&#65039; Structural Programming JS</h3>
+          </li>
+          <li>
+            <h3>&#9745;&#65039; Object Oriented Progamming JS</h3>
+          </li>
+          <li>
+            <h3>&#9745;&#65039; Design Patterns</h3>
+          </li>
+          <li>
+            <h3>&#9745;&#65039; Advanced Features of HTML, CSS</h3>
+          </li>
+          <li>
+            <h3>&#9745;&#65039; Advanced Elements of JavaScript</h3>
+          </li>
+          <li>
+            <h3>
+              &#128306; <b>React</b> <span>- currently working on</span>
+            </h3>
+          </li>
+          <li>
+            <h3>&#128306; SQL Basics</h3>
+          </li>
+          <li>
+            <h3>&#128306; Mongoose</h3>
+          </li>
+          <li>
+            <h3>&#128306; PHP Basics</h3>
+          </li>
+          <li>
+            <h3>&#128306; Vue JS</h3>
+          </li>
+          <li>
+            <h3>&#128306; Testing</h3>
+          </li>
+          <li>
+            <h3>&#128306; Testing</h3>
+          </li>
+          <li>
+            <h3>&#128306; Testing</h3>
+          </li>
+          <li>
+            <h3>&#128306; Testing</h3>
+          </li>
+          <li>
+            <h3>&#128306; Testing</h3>
+          </li>
+          <li>
+            <h3>&#128306; Testing</h3>
+          </li>
+        </ul>
+      </div>
 
-       
+      <div id="github-container" class="card about grid-col-span-2">
+        <a href="https://github.com/DeeaEmilia">
+          <img src="assets/images/github-light.svg" alt="github" />
+          <h3>Github Profile</h3>
+        </a>
+      </div>
 
-        <div id="github-container" class="card about grid-col-span-4">
-          <a href="https://github.com/DeeaEmilia">
-            <img src="assets/images/github-light.svg" alt="github" />
-            <h3>Github Profile</h3>
-          </a>
-        </div>
+      <div id="linkedin-container" class="card about">
+        <a href="https://www.linkedin.com/in/deea-emilia-duta/">
+          <img src="assets/images/linkedin.svg" alt="linkedin" />
+          <h3>Linkedin Profile</h3>
+        </a>
+      </div>
 
-        <div id="linkedin-container" class="card about">
-          <a href="https://www.linkedin.com/in/deea-emilia-duta/">
-            <img src="assets/images/linkedin.svg" alt="linkedin" />
-            <h3>Linkedin Profile</h3>
-          </a>
-        </div>
+      <div id="leetcode-container" class="card about">
+        <a href="https://leetcode.com/deeaemiliad/">
+          <img src="assets/images/leetcode.svg" alt="github" />
+          <h3>LeetCode Profile</h3>
+        </a>
+      </div>
 
-        <div id="leetcode-container" class="card about">
-          <a href="https://leetcode.com/deeaemiliad/">
-            <img src="assets/images/leetcode.svg" alt="github" />
-            <h3>LeetCode Profile</h3>
-          </a>
-        </div>
+      <div id="html-container" class="card skills">
+        <img src="assets/images/html5.svg" alt="" />
+        <h3>HTML</h3>
+      </div>
 
-        <div id="html-container" class="card skills">
-          <img src="assets/images/html5.svg" alt="" />
-          <h3>HTML</h3>
-        </div>
+      <div id="css-container" class="card skills">
+        <img src="assets/images/css3.svg" alt="" />
+        <h3>CSS</h3>
+      </div>
 
-        <div id="css-container" class="card skills">
-          <img src="assets/images/css3.svg" alt="" />
-          <h3>CSS</h3>
-        </div>
+      <div id="javascript-container" class="card skills">
+        <img src="assets/images/javascript.svg" alt="" />
+        <h3>JavaScript</h3>
+      </div>
 
-        <div id="learning-path" class="card skills about grid-row-span-3 grid-col-span-2">
-          <h2>Learning Path</h2>
-          <ul>
-            <li><h3>&#9745;&#65039; HTML Basics</h3></li>
-            <li><h3>&#9745;&#65039; CSS Basics</h3></li>
-            <li><h3>&#9745;&#65039; JavaScript Basics</h3></li>
-            <li><h3>&#9745;&#65039; SASS</h3></li>
-            <li><h3>&#9745;&#65039; Bootstrap</h3></li>
-            <li><h3>&#9745;&#65039; Tailwind</h3></li>
-            <li><h3>&#9745;&#65039; Responsive Design</h3></li>
-            <li><h3>&#9745;&#65039; Structural Programming JS</h3></li>
-            <li><h3>&#9745;&#65039; Object Oriented Progamming JS</h3></li>
-            <li><h3>&#9745;&#65039; Design Patterns</h3></li>
-            <li><h3>&#9745;&#65039; Advanced Features of HTML, CSS</h3></li>
-            <li><h3>&#9745;&#65039; Advanced Elements of JavaScript</h3></li>
-            <li>
-              <h3>
-                &#128306; <b>React</b> <span>- currently working on</span>
-              </h3>
-            </li>
-            <li><h3>&#128306; SQL Basics</h3></li>
-            <li><h3>&#128306; Mongoose</h3></li>
-            <li><h3>&#128306; PHP Basics</h3></li>
-            <li><h3>&#128306; Vue JS</h3></li>
-            <li><h3>&#128306; Testing</h3></li>
-            <li><h3>&#128306; Testing</h3></li>
-            <li><h3>&#128306; Testing</h3></li>
-            <li><h3>&#128306; Testing</h3></li>
-            <li><h3>&#128306; Testing</h3></li>
-            <li><h3>&#128306; Testing</h3></li>
-          </ul>
-        </div>
+      <div id="sass-container" class="card skills">
+        <img src="assets/images/sass.svg" alt="" />
+        <h3>SASS</h3>
+      </div>
 
-        
+      <div id="vite-container" class="card skills">
+        <img src="assets/images/vitejs.svg" alt="" />
+        <h3>Vite</h3>
+      </div>
 
-        <div id="javascript-container" class="card skills">
-          <img src="assets/images/javascript.svg" alt="" />
-          <h3>JavaScript</h3>
-        </div>
+      <div id="react-container" class="card skills">
+        <img src="assets/images/react.svg" alt="" />
+        <h3>React</h3>
+      </div>
 
-        <div id="sass-container" class="card skills">
-          <img src="assets/images/sass.svg" alt="" />
-          <h3>SASS</h3>
-        </div>
+      <div id="node-container" class="card skills">
+        <img src="assets/images/nodejs.svg" alt="" />
+        <h3>Node.js</h3>
+      </div>
 
-        <div id="vite-container" class="card skills">
-          <img src="assets/images/vitejs.svg" alt="" />
-          <h3>Vite</h3>
-        </div>
+      <div class="card projects grid-row-span-2">Project 1</div>
+      <div class="card projects grid-col-span-2 grid-row-span-2">Project 2</div>
+      <div class="card projects grid-col-span-2">Project 3</div>
+      <div class="card projects grid-row-span-6">Project 5</div>
+      <div class="card projects grid-col-span-2 grid-row-span-5">Project 4</div>
 
-        <div id="react-container" class="card skills">
-          <img src="assets/images/react.svg" alt="" />
-          <h3>React</h3>
-        </div>
+      <div class="card projects grid-col-span-2">Project 6</div>
+      <div id="illustrator-container" class="card skills">
+        <img src="assets/images/adobe-illustrator.svg" alt="" />
+        <h3>Adobe Illustrator</h3>
+      </div>
 
-        <div id="node-container" class="card skills">
-          <img src="assets/images/nodejs.svg" alt="" />
-          <h3>Node.js</h3>
-        </div>
+      <div id="photoshop-container" class="card skills">
+        <img src="assets/images/adobe-photoshop.svg" alt="" />
+        <h3>Adobe Photoshop</h3>
+      </div>
+      <div id="figma-container" class="card skills certifications">
+        <img src="assets/images/figma.svg" alt="" />
+        <h3>Figma</h3>
+      </div>
+      <div id="form-container" class="card about projects certifications grid-col-span-5 grid-row-span-4">
+        <h3>Contact Me Form</h3>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quam
+          asperiores sit consequuntur. Asperiores illo quaerat assumenda
+          aperiam ab error consequatur possimus expedita commodi! Laudantium
+          repudiandae doloribus officia optio cupiditate dignissimos, eaque
+          odit eveniet vitae velit necessitatibus voluptate neque cum
+          consequuntur temporibus! Deserunt eligendi dolore ratione nihil,
+          asperiores consectetur quia ab dolores expedita possimus! Facilis
+          distinctio, reiciendis voluptas consectetur fugit officiis, alias
+          sapiente quis accusamus velit eveniet nisi fuga. Ipsam officiis
+          neque vero ipsa voluptatum sunt, porro eos a. Nesciunt ex, facilis,
+          architecto quae temporibus dignissimos dolor minima velit in,
+          molestiae repellat? Reprehenderit non magni ipsa alias beatae
+          repellendus dignissimos aspernatur.
+        </p>
+      </div>
+    </main>
+  </div>
 
-       
+  <script src="scripts/main.js"></script>
+  <script src="scripts/filter.js"></script>
+</body>
 
-        
-        
-        <div class="card projects grid-row-span-2">Project 1</div>
-        <div class="card projects grid-col-span-2 grid-row-span-2">Project 2</div>
-        <div class="card projects grid-col-span-2">Project 3</div>
-        <div class="card projects grid-row-span-6">Project 5</div>
-        <div class="card projects grid-col-span-2 grid-row-span-5">Project 4</div>
-        
-        <div class="card projects grid-col-span-2">Project 6</div>
-        <div id="illustrator-container" class="card skills">
-          <img src="assets/images/adobe-illustrator.svg" alt="" />
-          <h3>Adobe Illustrator</h3>
-        </div>
-
-        <div id="photoshop-container" class="card skills">
-          <img src="assets/images/adobe-photoshop.svg" alt="" />
-          <h3>Adobe Photoshop</h3>
-        </div>
-        <div id="figma-container" class="card skills certifications">
-          <img src="assets/images/figma.svg" alt="" />
-          <h3>Figma</h3>
-        </div>
-        <div id="form-container" class="card about projects certifications grid-col-span-5 grid-row-span-4">
-          <h3>Contact Me Form</h3>
-          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quam asperiores sit consequuntur. Asperiores illo quaerat assumenda aperiam ab error consequatur possimus expedita commodi! Laudantium repudiandae doloribus officia optio cupiditate dignissimos, eaque odit eveniet vitae velit necessitatibus voluptate neque cum consequuntur temporibus! Deserunt eligendi dolore ratione nihil, asperiores consectetur quia ab dolores expedita possimus! Facilis distinctio, reiciendis voluptas consectetur fugit officiis, alias sapiente quis accusamus velit eveniet nisi fuga. Ipsam officiis neque vero ipsa voluptatum sunt, porro eos a. Nesciunt ex, facilis, architecto quae temporibus dignissimos dolor minima velit in, molestiae repellat? Reprehenderit non magni ipsa alias beatae repellendus dignissimos aspernatur.</p>
-        </div>
-
-       
-      </main>
-    </div>
-
-    <script src="scripts/main.js"></script>
-    <script src="scripts/filter.js"></script>
-  </body>
 </html>
