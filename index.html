@@ -18,7 +18,7 @@
 
 <body>
   <div class="container">
-    <header>
+    <header id="header">
       <div class="switch">
         <label for="checkbox" class="theme-switch">
           <input type="checkbox" id="checkbox" />
@@ -40,7 +40,7 @@
     </header>
 
     <main class="main-content">
-      <div id="about" class="card about grid-col-span-4 grid-row-span-3">
+      <div id="about" class="card about ">
         <div class="about-me">
           <div>
             <p class="about-name">Hello! My name is</p>
@@ -61,7 +61,31 @@
         <button class="btn">Download CV</button>
       </div>
 
-      <div id="learning-path" class="card skills about grid-row-span-3 grid-col-span-2">
+      <div id="weather" class="card projects">
+        <h3>Weather App</h3>
+      </div>
+
+      <div id="github-container" class="card about">
+        <a href="https://github.com/DeeaEmilia">
+          <img src="assets/images/github-light.svg" alt="github" />
+          <h3>Github Profile</h3>
+        </a>
+      </div>
+
+      <div id="linkedin-container" class="card about">
+        <a href="https://www.linkedin.com/in/deea-emilia-duta/">
+          <img src="assets/images/linkedin.svg" alt="linkedin" />
+          <h3>Linkedin Profile</h3>
+        </a>
+      </div>
+
+      <div id="leetcode-container" class="card about">
+        <a href="https://leetcode.com/deeaemiliad/">
+          <img src="assets/images/leetcode.svg" alt="github" />
+          <h3>LeetCode Profile</h3>
+        </a>
+      </div>
+      <div id="learning-path" class="card skills about">
         <h2>Learning Path</h2>
         <ul>
           <li>
@@ -138,30 +162,7 @@
         </ul>
       </div>
 
-      <div id="github-container" class="card about grid-col-span-2">
-        <a href="https://github.com/DeeaEmilia">
-          <img src="assets/images/github-light.svg" alt="github" />
-          <h3>Github Profile</h3>
-        </a>
-      </div>
-
-      <div id="linkedin-container" class="card about">
-        <a href="https://www.linkedin.com/in/deea-emilia-duta/">
-          <img src="assets/images/linkedin.svg" alt="linkedin" />
-          <h3>Linkedin Profile</h3>
-        </a>
-      </div>
-
-      <div id="leetcode-container" class="card about">
-        <a href="https://leetcode.com/deeaemiliad/">
-          <img src="assets/images/leetcode.svg" alt="github" />
-          <h3>LeetCode Profile</h3>
-        </a>
-      </div>
-
-      <div id="weather" class="card projects grid-col-span-2 grid-row-span-4">
-        <h3>Weather App</h3>
-      </div>
+     
 
       <div id="html-container" class="card skills">
         <img src="assets/images/html5.svg" alt="" />
@@ -199,14 +200,14 @@
       </div>
 
       
-      <div id="heroes-arena" class="card projects grid-col-span-2 grid-row-span-3">
+      <div id="heroes-arena" class="card projects">
         <h3>Heroes Arena</h3>
       </div>
-      <div class="card projects grid-col-span-2">Project 3</div>
-      <div class="card projects grid-row-span-6">Project 5</div>
-      <div class="card projects grid-col-span-2 grid-row-span-5">Project 4</div>
+      <div class="card projects">Project 3</div>
+      <div class="card projects">Project 5</div>
+      <div class="card projects">Project 4</div>
 
-      <div class="card projects grid-col-span-2">Project 6</div>
+      <div class="card projects">Project 6</div>
       <div id="illustrator-container" class="card skills">
         <img src="assets/images/adobe-illustrator.svg" alt="" />
         <h3>Adobe Illustrator</h3>
@@ -227,23 +228,28 @@
         <img src="assets/images/figma.svg" alt="" />
         <h3>Tailwind</h3>
       </div>
-      <div id="form-container" class="card about certifications grid-col-span-5 grid-row-span-4">
+      <div id="form-container" class="card about certifications">
         <h3>Contact Me Form</h3>
-        <p>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quam
-          asperiores sit consequuntur. Asperiores illo quaerat assumenda
-          aperiam ab error consequatur possimus expedita commodi! Laudantium
-          repudiandae doloribus officia optio cupiditate dignissimos, eaque
-          odit eveniet vitae velit necessitatibus voluptate neque cum
-          consequuntur temporibus! Deserunt eligendi dolore ratione nihil,
-          asperiores consectetur quia ab dolores expedita possimus! Facilis
-          distinctio, reiciendis voluptas consectetur fugit officiis, alias
-          sapiente quis accusamus velit eveniet nisi fuga. Ipsam officiis
-          neque vero ipsa voluptatum sunt, porro eos a. Nesciunt ex, facilis,
-          architecto quae temporibus dignissimos dolor minima velit in,
-          molestiae repellat? Reprehenderit non magni ipsa alias beatae
-          repellendus dignissimos aspernatur.
-        </p>
+        <form name="contact" method="POST" data-netlify="true">
+          <p>
+            <label>Your Name: <input type="text" name="name" required/></label>
+          </p>
+          <p>
+            <label>Your Email: <input type="email" name="email" required/></label>
+          </p>
+          <p>
+            <label>Your Role: <select name="role[]" multiple>
+              <option value="leader">Leader</option>
+              <option value="follower">Follower</option>
+            </select></label>
+          </p>
+          <p>
+            <label>Message: <textarea name="message"></textarea></label>
+          </p>
+          <p>
+            <button type="submit">Send</button>
+          </p>
+        </form>
       </div>
     </main>
   </div>

@@ -1,9 +1,10 @@
 @import 'reset';
+@import 'breakpoints';
 @import 'nav';
 @import 'button';
-@import 'grid';
 @import 'theme';
 @import 'cards';
+
 
 :root {
   --background: hsl(0, 0%, 91%);
@@ -24,12 +25,32 @@ body {
   margin: 3rem 10rem;
   background-color: var(--background);
   color: var(--font);
+  transition: all 0.3s ease-in;
 }
 
 .main-content {
+  
   display: grid;
+  justify-content: center;
   gap: 2rem;
-  grid-template-columns: repeat(8, 1fr);
+  grid-template-columns: 1fr;
+
+  
+  @media screen and (min-width: $screen-sm) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media screen and (min-width: $screen-md) {
+    grid-template-columns: repeat(3, 1fr);
+  } 
+
+  @media screen and (min-width: $screen-xl) {
+    grid-template-columns: repeat(5, 1fr);
+  }
+
+  @media screen and (min-width: $screen-xxl) {
+    grid-template-columns: repeat(8, 1fr);
+  }
 }
 
 h1 {

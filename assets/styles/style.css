@@ -72,62 +72,6 @@ nav ul li:hover, nav ul li:focus {
   background: linear-gradient(var(--card), var(--card)) padding-box, linear-gradient(45deg, var(--purple), var(--orange)) border-box;
 }
 
-.grid-col-span-2 {
-  grid-column: span 2;
-}
-
-.grid-col-span-3 {
-  grid-column: span 3;
-}
-
-.grid-col-span-4 {
-  grid-column: span 4;
-}
-
-.grid-col-span-5 {
-  grid-column: span 5;
-}
-
-.grid-col-span-6 {
-  grid-column: span 6;
-}
-
-.grid-col-span-7 {
-  grid-column: span 7;
-}
-
-.grid-col-span-8 {
-  grid-column: span 8;
-}
-
-.grid-row-span-2 {
-  grid-row: span 2;
-}
-
-.grid-row-span-3 {
-  grid-row: span 3;
-}
-
-.grid-row-span-4 {
-  grid-row: span 4;
-}
-
-.grid-row-span-5 {
-  grid-row: span 5;
-}
-
-.grid-row-span-6 {
-  grid-row: span 6;
-}
-
-.grid-row-span-7 {
-  grid-row: span 7;
-}
-
-.grid-row-span-8 {
-  grid-row: span 8;
-}
-
 .theme-switch {
   display: inline-block;
   height: 2.5rem;
@@ -200,6 +144,20 @@ nav ul li:hover, nav ul li:focus {
 #about {
   align-items: flex-start;
   text-align: left;
+  grid-column: 1;
+  grid-row: span 2;
+}
+@media screen and (min-width: 576px) {
+  #about {
+    grid-column: span 2;
+    grid-row: span 2;
+  }
+}
+@media screen and (min-width: 768px) {
+  #about {
+    grid-column: span 3;
+    grid-row: span 3;
+  }
 }
 #about .about-name {
   font-size: 1.2rem;
@@ -226,14 +184,54 @@ nav ul li:hover, nav ul li:focus {
   align-items: center;
 }
 #picture-container .picture {
-  height: 14rem;
-  width: 14rem;
+  height: 6rem;
+  width: 6rem;
   background-image: url(../images/Deea.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   box-shadow: hsla(0, 0%, 0%, 0.15) 0px 2px 8px;
   border-radius: 20rem;
   margin: 0 3rem;
+}
+@media screen and (min-width: 768px) {
+  #picture-container .picture {
+    height: 8rem;
+    width: 8rem;
+  }
+}
+@media screen and (min-width: 768px) {
+  #picture-container .picture {
+    height: 10rem;
+    width: 10rem;
+  }
+}
+@media screen and (min-width: 992px) {
+  #picture-container .picture {
+    height: 14rem;
+    width: 14rem;
+  }
+}
+
+#learning-path {
+  flex-direction: column;
+  align-items: center;
+  text-align: left;
+}
+@media screen and (min-width: 576px) {
+  #learning-path {
+    grid-column: span 2;
+    grid-row: span 3;
+  }
+}
+#learning-path h2 {
+  margin-bottom: 1rem;
+}
+#learning-path h3 {
+  font-weight: 300;
+  font-size: 1rem;
+}
+#learning-path span {
+  font-style: italic;
 }
 
 #linkedin-container {
@@ -267,22 +265,6 @@ nav ul li:hover, nav ul li:focus {
   transition: 500ms;
 }
 
-#learning-path {
-  flex-direction: column;
-  align-items: center;
-  text-align: left;
-}
-#learning-path h2 {
-  margin-bottom: 1rem;
-}
-#learning-path h3 {
-  font-weight: 300;
-  font-size: 1rem;
-}
-#learning-path span {
-  font-style: italic;
-}
-
 #javascript-container {
   background-color: var(--javascript);
 }
@@ -307,6 +289,8 @@ nav ul li:hover, nav ul li:focus {
 
 #weather {
   background-image: url(../images/weather.png);
+  grid-column: span 4;
+  grid-row: span 3;
 }
 
 .projects {
@@ -352,12 +336,34 @@ body {
   margin: 3rem 10rem;
   background-color: var(--background);
   color: var(--font);
+  transition: all 0.3s ease-in;
 }
 
 .main-content {
   display: grid;
+  justify-content: center;
   gap: 2rem;
-  grid-template-columns: repeat(8, 1fr);
+  grid-template-columns: 1fr;
+}
+@media screen and (min-width: 576px) {
+  .main-content {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (min-width: 768px) {
+  .main-content {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .main-content {
+    grid-template-columns: repeat(5, 1fr);
+  }
+}
+@media screen and (min-width: 1400px) {
+  .main-content {
+    grid-template-columns: repeat(8, 1fr);
+  }
 }
 
 h1 {

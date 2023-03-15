@@ -18,14 +18,12 @@ function filterSelection(category) {
 // Add the 'show' class to the element and trigger the transition effect
 function addClass(element, className) {
   element.classList.add(className);
-  element.offsetWidth; // trigger a reflow to ensure the transition is applied
   element.classList.add('show');
 }
 
 // Remove the 'show' class from the element and trigger the transition effect
 function removeClass(element, className) {
   element.classList.remove('show');
-  element.offsetWidth; // trigger a reflow to ensure the transition is applied
   element.classList.remove(className);
 }
 
