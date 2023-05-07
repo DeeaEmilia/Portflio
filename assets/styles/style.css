@@ -21,6 +21,21 @@ a {
   text-decoration: none;
 }
 
+:root {
+  --background: hsl(0, 0%, 91%);
+  --card: hsl(0, 0%, 100%);
+  --font: hsl(0, 0%, 24%);
+  --nav: hsl(0, 0%, 88%);
+  --light: hsl(0, 0%, 80%);
+  --white: hsl(0, 0%, 100%);
+  --black: hsl(0, 0%, 0%);
+  --purple: hsl(248, 53%, 58%);
+  --orange: hsl(16, 100%, 66%);
+  --linkedin: hsl(220, 61%, 50%);
+  --github: hsl(210, 12%, 19%);
+  --javascript: hsl(53, 93%, 54%);
+}
+
 header {
   display: flex;
   justify-content: space-between;
@@ -141,33 +156,33 @@ nav ul li:hover, nav ul li:focus {
   height: 5rem;
 }
 
-#about {
+.about-container {
   align-items: flex-start;
   text-align: left;
   grid-column: 1;
   grid-row: span 2;
 }
 @media screen and (min-width: 576px) {
-  #about {
+  .about-container {
     grid-column: span 2;
     grid-row: span 2;
   }
 }
 @media screen and (min-width: 768px) {
-  #about {
+  .about-container {
     grid-column: span 3;
     grid-row: span 3;
   }
 }
-#about .about-name {
+.about-container .about-name {
   font-size: 1.2rem;
   font-weight: 600;
   margin-bottom: 1rem;
 }
-#about .about-body {
+.about-container .about-body {
   margin-top: 2rem;
 }
-#about .btn {
+.about-container .btn {
   margin-top: 3rem;
 }
 
@@ -178,12 +193,12 @@ nav ul li:hover, nav ul li:focus {
   width: 100%;
 }
 
-#picture-container {
+.picture-container {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-#picture-container .picture {
+.picture-container .picture {
   height: 6rem;
   width: 6rem;
   background-image: url(../images/Deea.jpg);
@@ -194,97 +209,97 @@ nav ul li:hover, nav ul li:focus {
   margin: 0 3rem;
 }
 @media screen and (min-width: 768px) {
-  #picture-container .picture {
+  .picture-container .picture {
     height: 8rem;
     width: 8rem;
   }
 }
 @media screen and (min-width: 768px) {
-  #picture-container .picture {
+  .picture-container .picture {
     height: 10rem;
     width: 10rem;
   }
 }
 @media screen and (min-width: 992px) {
-  #picture-container .picture {
+  .picture-container .picture {
     height: 14rem;
     width: 14rem;
   }
 }
 
-#learning-path {
+.learning-path {
   flex-direction: column;
   align-items: center;
   text-align: left;
 }
 @media screen and (min-width: 576px) {
-  #learning-path {
+  .learning-path {
     grid-column: span 2;
     grid-row: span 3;
   }
 }
-#learning-path h2 {
+.learning-path h2 {
   margin-bottom: 1rem;
 }
-#learning-path h3 {
+.learning-path h3 {
   font-weight: 300;
   font-size: 1rem;
 }
-#learning-path span {
+.learning-path span {
   font-style: italic;
 }
 
-#linkedin-container {
+.linkedin-container {
   background-color: var(--linkedin);
 }
-#linkedin-container h3 {
+.linkedin-container h3 {
   color: var(--white);
 }
-#linkedin-container h3:hover {
+.linkedin-container h3:hover {
   color: var(--orange);
 }
 
-#github-container {
+.github-container {
   background-color: var(--github);
 }
-#github-container:hover {
+.github-container:hover {
   filter: brightness(120%);
   cursor: pointer;
   transition: 500ms;
 }
-#github-container h3 {
+.github-container h3 {
   color: var(--white);
 }
-#github-container h3:hover {
+.github-container h3:hover {
   color: var(--orange);
 }
 
-#javascript-container {
+.javascript-container {
   background-color: var(--javascript);
 }
-#javascript-container h3 {
+.javascript-container h3 {
   color: var(--black);
 }
 
-#node-container {
+.node-container {
   background-color: var(--white);
 }
-#node-container h3 {
+.node-container h3 {
   color: var(--black);
 }
 
-#form-container {
+.form-container {
   text-align: left;
 }
 
-#heroes-arena {
+.project-2 {
   background-image: url(../images/Heroes-Arena.png);
 }
 
-#project-1 {
+.project-1 {
   background-image: url(../images/weather.png);
-  grid-column: span 4;
-  grid-row: span 2;
+  grid-column: span 3;
+  grid-row: span 3;
 }
 
 .projects {
@@ -311,7 +326,7 @@ nav ul li:hover, nav ul li:focus {
   visibility: hidden;
 }
 
-#form-container {
+.form-container {
   grid-column: span 3;
   grid-row: span 3;
   display: flex;
@@ -323,25 +338,25 @@ nav ul li:hover, nav ul li:focus {
   box-shadow: hsla(0, 0%, 0%, 0.15) 0px 2px 8px;
   text-align: center;
 }
-#form-container h3 {
+.form-container h3 {
   margin-bottom: 2rem;
 }
-#form-container form {
+.form-container form {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   text-align: left;
 }
-#form-container form p {
+.form-container form p {
   margin-bottom: 1rem;
 }
-#form-container form p label {
+.form-container form p label {
   display: block;
   margin-bottom: 0.5rem;
   color: var(--font);
   font-weight: bold;
 }
-#form-container form p .input {
+.form-container form p .input {
   width: 500px;
   height: 50px;
   padding: 0.5rem;
@@ -349,28 +364,13 @@ nav ul li:hover, nav ul li:focus {
   border: 3px solid transparent;
   border-radius: 1rem;
 }
-#form-container form p .input:focus {
+.form-container form p .input:focus {
   outline: none;
   box-shadow: 0 0 0 2px var(--orange);
 }
-#form-container form p .input.input-message {
+.form-container form p .input.input-message {
   height: 150px;
   border-radius: 1rem;
-}
-
-:root {
-  --background: hsl(0, 0%, 91%);
-  --card: hsl(0, 0%, 100%);
-  --font: hsl(0, 0%, 24%);
-  --nav: hsl(0, 0%, 88%);
-  --light: hsl(0, 0%, 80%);
-  --white: hsl(0, 0%, 100%);
-  --black: hsl(0, 0%, 0%);
-  --purple: hsl(248, 53%, 58%);
-  --orange: hsl(16, 100%, 66%);
-  --linkedin: hsl(220, 61%, 50%);
-  --github: hsl(210, 12%, 19%);
-  --javascript: hsl(53, 93%, 54%);
 }
 
 body {

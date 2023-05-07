@@ -1,69 +1,52 @@
 @import 'reset';
+@import 'colors';
 @import 'breakpoints';
 @import 'nav';
 @import 'button';
 @import 'theme';
 @import 'cards';
 
-
-:root {
-  --background: hsl(0, 0%, 91%);
-  --card: hsl(0, 0%, 100%);
-  --font: hsl(0, 0%, 24%);
-  --nav: hsl(0, 0%, 88%);
-  --light: hsl(0, 0%, 80%);
-  --white: hsl(0, 0%, 100%);
-  --black: hsl(0, 0%, 0%);
-  --purple: hsl(248, 53%, 58%);
-  --orange: hsl(16, 100%, 66%);
-  --linkedin: hsl(220, 61%, 50%);
-  --github: hsl(210, 12%, 19%);
-  --javascript: hsl(53, 93%, 54%);
-}
-
 body {
-  margin: 3rem 10rem;
-  background-color: var(--background);
-  color: var(--font);
-  transition: all 0.3s ease-in;
+    margin: 3rem 10rem;
+    background-color: var(--background);
+    color: var(--font);
+    transition: all 0.3s ease-in;
 }
 
 .main-content {
-  
-  display: grid;
-  justify-content: center;
-  gap: 2rem;
-  grid-template-columns: 1fr;
+    display: grid;
+    justify-content: center;
+    gap: 2rem;
+    grid-template-columns: 1fr;
 
-  
-  @media screen and (min-width: $screen-sm) {
-    grid-template-columns: repeat(2, 1fr);
-  }
+    @media screen and (min-width: $screen-sm) {
+        grid-template-columns: repeat(2, 1fr);
+    }
 
-  @media screen and (min-width: $screen-md) {
-    grid-template-columns: repeat(3, 1fr);
-  } 
+    @media screen and (min-width: $screen-md) {
+        grid-template-columns: repeat(3, 1fr);
+    }
 
-  @media screen and (min-width: $screen-xl) {
-    grid-template-columns: repeat(5, 1fr);
-  }
+    @media screen and (min-width: $screen-xl) {
+        grid-template-columns: repeat(5, 1fr);
+    }
 
-  @media screen and (min-width: $screen-xxl) {
-    grid-template-columns: repeat(8, 1fr);
-  }
+    @media screen and (min-width: $screen-xxl) {
+        grid-template-columns: repeat(8, 1fr);
+    }
 }
 
 h1 {
-  background: -webkit-linear-gradient(45deg, var(--purple), var(--orange));
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
+    background: -webkit-linear-gradient(45deg, var(--purple), var(--orange));
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .active {
-  background-color: var(--card);
+    background-color: var(--card);
 }
 
 .show {
-  display: flex;
+    display: flex;
 }
