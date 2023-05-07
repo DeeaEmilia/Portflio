@@ -1,6 +1,10 @@
 @font-face {
-  font-family: 'Raleway';
-  src: url(../fonts/Raleway-Regular.woff2);
+    font-family: 'Raleway';
+    src: url(../fonts/Raleway-Regular.woff2);
+}
+@font-face {
+    font-family: 'Calligraphy';
+    src: url(../fonts/Calligraphy.ttf);
 }
 
 * {
@@ -8,17 +12,16 @@
     padding: 0;
     box-sizing: border-box;
     scroll-behavior: smooth;
-  }
-  
-  html {
+}
+
+html {
     font-family: 'Raleway', sans-serif;
-  }
+}
 
-  ul {
+ul {
     list-style: none;
-  }
+}
 
-  a {
+a {
     text-decoration: none;
-  }
-
+}

@@ -84,3 +84,15 @@ function updateWeatherWidget(data) {
 }
 
 getUserLocation();
+
+function updateTime() {
+    const now = new Date();
+    const hours = now.getHours().toString().padStart(2, '0');
+    const minutes = now.getMinutes().toString().padStart(2, '0');
+    const timeElement = document.querySelector('.time');
+    timeElement.textContent = `${hours}:${minutes}`;
+}
+
+// Update the time immediately and every minute thereafter
+updateTime();
+setInterval(updateTime, 60000);

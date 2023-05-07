@@ -2,6 +2,10 @@
   font-family: "Raleway";
   src: url(../fonts/Raleway-Regular.woff2);
 }
+@font-face {
+  font-family: "Calligraphy";
+  src: url(../fonts/Calligraphy.ttf);
+}
 * {
   margin: 0;
   padding: 0;
@@ -34,6 +38,29 @@ a {
   --linkedin: hsl(220, 61%, 50%);
   --github: hsl(210, 12%, 19%);
   --javascript: hsl(53, 93%, 54%);
+}
+
+.top-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.top-bar p {
+  font-family: "Calligraphy", sans-serif;
+  font-weight: 700;
+  opacity: 0.1;
+  font-size: 1.5rem;
+}
+
+.time-container {
+  display: flex;
+  align-items: baseline;
+}
+.time-container .time {
+  margin-right: 5px;
+}
+.time-container img {
+  height: 13px;
 }
 
 header {
@@ -235,7 +262,7 @@ nav ul li:hover, nav ul li:focus {
 @media screen and (min-width: 576px) {
   .learning-path {
     grid-column: span 2;
-    grid-row: span 3;
+    grid-row: span 4;
   }
 }
 .learning-path h2 {
