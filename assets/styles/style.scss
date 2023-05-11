@@ -37,7 +37,11 @@ body {
 }
 
 h1 {
-    background: -webkit-linear-gradient(45deg, var(--purple), var(--orange));
+    background: -webkit-linear-gradient(
+        45deg,
+        var(--secondary),
+        var(--primary)
+    );
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;

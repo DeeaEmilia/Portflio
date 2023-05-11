@@ -26,18 +26,18 @@ a {
 }
 
 :root {
-  --background: hsl(0, 0%, 91%);
+  --background: #e8e8e8;
   --card: hsl(0, 0%, 100%);
-  --font: hsl(0, 0%, 24%);
+  --font: #3d3d3d;
   --nav: hsl(0, 0%, 88%);
   --light: hsl(0, 0%, 80%);
   --white: hsl(0, 0%, 100%);
   --black: hsl(0, 0%, 0%);
-  --purple: hsl(248, 53%, 58%);
-  --orange: hsl(16, 100%, 66%);
+  --primary: #07bdb7;
+  --secondary: #ef6d94;
   --linkedin: hsl(220, 61%, 50%);
   --github: hsl(210, 12%, 19%);
-  --javascript: hsl(53, 93%, 54%);
+  --javascript: #f7dd1d;
 }
 
 .top-bar {
@@ -104,14 +104,14 @@ nav ul li:hover, nav ul li:focus {
   font-weight: bold;
   color: var(--font);
   padding: 1rem 2rem;
-  background: linear-gradient(var(--background), var(--background)) padding-box, linear-gradient(45deg, var(--purple), var(--orange)) border-box;
+  background: linear-gradient(var(--background), var(--background)) padding-box, linear-gradient(45deg, var(--primary), var(--secondary)) border-box;
   border: 3px solid transparent;
   border-radius: 50px;
   box-shadow: hsla(0, 0%, 0%, 0.15) 0px 2px 8px;
   cursor: pointer;
 }
 .btn:hover {
-  background: linear-gradient(var(--card), var(--card)) padding-box, linear-gradient(45deg, var(--purple), var(--orange)) border-box;
+  background: linear-gradient(var(--card), var(--card)) padding-box, linear-gradient(45deg, var(--primary), var(--secondary)) border-box;
 }
 
 .theme-switch {
@@ -173,7 +173,7 @@ nav ul li:hover, nav ul li:focus {
   color: var(--font);
 }
 .card a:hover {
-  color: var(--orange);
+  color: var(--secondary);
 }
 .card a h3 {
   margin-top: 0.5rem;
@@ -254,16 +254,23 @@ nav ul li:hover, nav ul li:focus {
   }
 }
 
-.learning-path {
-  background-image: url(/assets/images/roadmap.webp);
-  background-size: contain;
-  background-repeat: no-repeat;
+.learning-path .learning-path-image {
+  width: 100%;
+  height: auto;
 }
 @media screen and (min-width: 576px) {
   .learning-path {
     grid-column: span 2;
-    grid-row: span 3;
+    grid-row: span 4;
   }
+}
+
+.html-text {
+  font-family: "Raleway", sans-serif;
+}
+
+.css-text {
+  font-family: "Calligraphy", sans-serif;
 }
 
 .linkedin-container {
@@ -273,7 +280,7 @@ nav ul li:hover, nav ul li:focus {
   color: var(--white);
 }
 .linkedin-container h3:hover {
-  color: var(--orange);
+  color: var(--secondary);
 }
 
 .github-container {
@@ -288,7 +295,7 @@ nav ul li:hover, nav ul li:focus {
   color: var(--white);
 }
 .github-container h3:hover {
-  color: var(--orange);
+  color: var(--secondary);
 }
 
 .javascript-container {
@@ -314,7 +321,6 @@ nav ul li:hover, nav ul li:focus {
 }
 
 .project-1 {
-  background-image: url(../images/weather.png);
   grid-column: span 3;
   grid-row: span 3;
 }
@@ -377,13 +383,13 @@ nav ul li:hover, nav ul li:focus {
   width: 500px;
   height: 50px;
   padding: 0.5rem;
-  background: linear-gradient(var(--background), var(--background)) padding-box, linear-gradient(45deg, var(--purple), var(--orange)) border-box;
+  background: linear-gradient(var(--background), var(--background)) padding-box, linear-gradient(45deg, var(--primary), var(--secondary)) border-box;
   border: 3px solid transparent;
   border-radius: 1rem;
 }
 .form-container form p .input:focus {
   outline: none;
-  box-shadow: 0 0 0 2px var(--orange);
+  box-shadow: 0 0 0 2px var(--secondary);
 }
 .form-container form p .input.input-message {
   height: 150px;
@@ -425,7 +431,7 @@ body {
 }
 
 h1 {
-  background: -webkit-linear-gradient(45deg, var(--purple), var(--orange));
+  background: -webkit-linear-gradient(45deg, var(--secondary), var(--primary));
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;

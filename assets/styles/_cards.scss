@@ -17,7 +17,7 @@
         color: var(--font);
 
         &:hover {
-            color: var(--orange);
+            color: var(--secondary);
         }
 
         h3 {
@@ -100,16 +100,23 @@
 }
 
 .learning-path {
-    background-image: url(/assets/images/roadmap.webp);
-    background-size: contain;
-    background-repeat: no-repeat;
-    // flex-direction: column;
-    // align-items: center;
-    // text-align: left;
+    // background-image: url(/assets/images/roadmap.svg);
+    // background-size: contain;
+    // background-repeat: no-repeat;
+    // background-position: center;
+    // // flex-direction: column;
+    // // align-items: center;
+    // // text-align: left;
+    // justify-content: flex-start;
+
+    .learning-path-image {
+        width: 100%;
+        height: auto;
+    }
 
     @media screen and (min-width: $screen-sm) {
         grid-column: span 2;
-        grid-row: span 3;
+        grid-row: span 4;
     }
 
     // h2 {
@@ -126,6 +133,14 @@
     // }
 }
 
+.html-text {
+    font-family: 'Raleway', sans-serif;
+}
+
+.css-text {
+    font-family: 'Calligraphy', sans-serif;
+}
+
 .linkedin-container {
     background-color: var(--linkedin);
 
@@ -133,7 +148,7 @@
         color: var(--white);
 
         &:hover {
-            color: var(--orange);
+            color: var(--secondary);
         }
     }
 }
@@ -151,7 +166,7 @@
         color: var(--white);
 
         &:hover {
-            color: var(--orange);
+            color: var(--secondary);
         }
     }
 }
@@ -181,7 +196,6 @@
 }
 
 .project-1 {
-    background-image: url(../images/weather.png);
     grid-column: span 3;
     grid-row: span 3;
 }
@@ -252,14 +266,14 @@
                             var(--background)
                         )
                         padding-box,
-                    linear-gradient(45deg, var(--purple), var(--orange))
+                    linear-gradient(45deg, var(--primary), var(--secondary))
                         border-box;
                 border: 3px solid transparent;
                 border-radius: 1rem;
 
                 &:focus {
                     outline: none;
-                    box-shadow: 0 0 0 2px var(--orange);
+                    box-shadow: 0 0 0 2px var(--secondary);
                 }
                 &.input-message {
                     height: 150px;

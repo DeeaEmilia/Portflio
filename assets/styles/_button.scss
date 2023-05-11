@@ -1,23 +1,24 @@
 .btn {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 
-  font-size: 1rem;
-  font-weight: bold;
-  color: var(--font);
-  padding: 1rem 2rem;
-  
-  background: linear-gradient(var(--background), var(--background)) padding-box,
-    linear-gradient(45deg, var(--purple), var(--orange)) border-box;
-  border: 3px solid transparent;
-  border-radius: 50px;
-  box-shadow: hsla(0, 0%, 0%, 0.15) 0px 2px 8px;
-  
-  cursor: pointer;
+    font-size: 1rem;
+    font-weight: bold;
+    color: var(--font);
+    padding: 1rem 2rem;
 
-  &:hover {
-    background: linear-gradient(var(--card), var(--card)) padding-box,
-      linear-gradient(45deg, var(--purple), var(--orange)) border-box;
-  }
+    background: linear-gradient(var(--background), var(--background))
+            padding-box,
+        linear-gradient(45deg, var(--primary), var(--secondary)) border-box;
+    border: 3px solid transparent;
+    border-radius: 50px;
+    box-shadow: hsla(0, 0%, 0%, 0.15) 0px 2px 8px;
+
+    cursor: pointer;
+
+    &:hover {
+        background: linear-gradient(var(--card), var(--card)) padding-box,
+            linear-gradient(45deg, var(--primary), var(--secondary)) border-box;
+    }
 }
