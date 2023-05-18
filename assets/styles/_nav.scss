@@ -27,7 +27,11 @@
 header {
     display: flex;
     justify-content: space-between;
-    margin: 1rem 0 6rem;
+
+    flex-wrap: wrap;
+    @media screen and (min-width: $screen-md) {
+        margin: 1rem 0 6rem;
+    }
 }
 
 nav {

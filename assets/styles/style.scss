@@ -7,10 +7,15 @@
 @import 'cards';
 
 body {
-    margin: 3rem 10rem;
     background-color: var(--background);
     color: var(--font);
     transition: all 0.3s ease-in;
+}
+
+.container {
+    @media screen and (min-width: $screen-xl) {
+        margin: 3rem 10rem;
+    }
 }
 
 .main-content {
@@ -20,7 +25,7 @@ body {
     grid-template-columns: 1fr;
 
     @media screen and (min-width: $screen-sm) {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(1, 1fr);
     }
 
     @media screen and (min-width: $screen-md) {
