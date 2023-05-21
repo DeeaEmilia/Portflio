@@ -300,14 +300,14 @@ nav ul li:hover, nav ul li:focus {
   height: 8rem;
   border-radius: 1rem;
   padding: 1.5rem;
-  background: linear-gradient(var(--background), var(--background)) padding-box, linear-gradient(45deg, var(--primary), var(--secondary)) border-box;
+  background: linear-gradient(var(--card), var(--card)) padding-box, linear-gradient(45deg, var(--primary), var(--secondary)) border-box;
   border: 2px solid transparent;
   box-shadow: hsla(0, 0%, 0%, 0.15) 0px 2px 8px;
   box-shadow: hsla(0, 0%, 0%, 0.15) 0px 2px 8px;
 }
 .learning-path .card-wrapper .learning-btn:hover {
   cursor: pointer;
-  background: linear-gradient(var(--card), var(--card)) padding-box, linear-gradient(45deg, var(--primary), var(--secondary)) border-box;
+  background: linear-gradient(var(--background), var(--background)) padding-box, linear-gradient(45deg, var(--primary), var(--secondary)) border-box;
 }
 
 .html-text {
