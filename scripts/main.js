@@ -96,3 +96,20 @@ function updateTime() {
 // Update the time immediately and every minute thereafter
 updateTime();
 setInterval(updateTime, 60000);
+
+document.addEventListener('DOMContentLoaded', function () {
+    let months = document.querySelectorAll('.month');
+    let innerText = document.querySelector('#inner-text');
+
+    months.forEach((month) => {
+        month.addEventListener('mouseover', function () {
+            let info = this.getAttribute('data-info');
+            innerText.textContent = info;
+        });
+
+        month.addEventListener('mouseout', function () {
+            innerText.textContent =
+                'Hover over a month to see what you learned';
+        });
+    });
+});
