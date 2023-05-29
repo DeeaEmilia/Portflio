@@ -269,23 +269,26 @@ nav ul li:hover, nav ul li:focus {
   }
 }
 
+svg text {
+  fill: var(--font);
+}
+svg text:hover {
+  cursor: pointer;
+}
+
 @media screen and (min-width: 1400px) {
   .learning-path {
     grid-column: span 4;
-    grid-row: span 4;
+    grid-row: span 3;
   }
-}
-.learning-path #inner-circle .st0 {
-  fill: var(--background);
-}
-.learning-path #inner-circle .st0:hover {
-  fill: var(--primary);
 }
 .learning-path #months .st0 {
   fill: var(--background);
+  stroke: var(--card);
+  stroke-width: 2;
 }
 .learning-path #months .st0:hover {
-  fill: var(--primary);
+  fill: var(--card);
   cursor: pointer;
 }
 
