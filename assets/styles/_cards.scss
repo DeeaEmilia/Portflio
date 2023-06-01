@@ -6,7 +6,7 @@
     background-color: var(--card);
     border-radius: 1rem;
     padding: 2rem;
-    box-shadow: hsla(0, 0%, 0%, 0.15) 0px 2px 8px;
+    box-shadow: hsla(0, 0%, 0%, 0.3) 0px 2px 8px;
     text-align: center;
 
     a {
@@ -17,14 +17,13 @@
         color: var(--font);
 
         &:hover {
-            color: var(--secondary);
+            color: var(--primary);
         }
 
         h3 {
             margin-top: 0.5rem;
         }
     }
-
     img {
         width: 5rem;
         height: 5rem;
@@ -55,8 +54,8 @@
     h1 {
         background: -webkit-linear-gradient(
             45deg,
-            var(--secondary),
-            var(--primary)
+            var(--primary),
+            var(--secondary)
         );
         -webkit-background-clip: text;
         background-clip: text;
@@ -85,7 +84,7 @@
     .picture {
         height: 6rem;
         width: 6rem;
-        background-image: url(../images/Deea.png);
+        background-image: url(../images/Deea.svg);
         background-size: cover;
         background-repeat: no-repeat;
         box-shadow: hsla(0, 0%, 0%, 0.15) 0px 2px 8px;
@@ -138,62 +137,8 @@ svg text {
     font-family: 'Raleway', sans-serif;
 }
 
-.css-text {
-    font-family: 'Calligraphy', sans-serif;
-}
-
-.linkedin-container {
-    background-color: var(--linkedin);
-
-    h3 {
-        color: var(--white);
-
-        &:hover {
-            color: var(--secondary);
-        }
-    }
-}
-
-.github-container {
-    background-color: var(--github);
-
-    &:hover {
-        filter: brightness(120%);
-        cursor: pointer;
-        transition: 500ms;
-    }
-
-    h3 {
-        color: var(--white);
-
-        &:hover {
-            color: var(--secondary);
-        }
-    }
-}
-
-.javascript-container {
-    background-color: var(--javascript);
-
-    h3 {
-        color: var(--black);
-    }
-}
-
-.node-container {
-    background-color: var(--white);
-
-    h3 {
-        color: var(--black);
-    }
-}
-
 .form-container {
     text-align: left;
-}
-
-.project-2 {
-    background-image: url(../images/Heroes-Arena.png);
 }
 
 .project-1 {

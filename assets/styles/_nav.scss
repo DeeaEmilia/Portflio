@@ -35,9 +35,12 @@ header {
 }
 
 nav {
-    background-color: var(--nav);
-    border-radius: 1.5rem;
-    box-shadow: hsla(0, 0%, 0%, 0.15) 0px 2px 8px;
+    background: linear-gradient(var(--background), var(--background))
+            padding-box,
+        linear-gradient(45deg, var(--secondary), var(--primary)) border-box;
+    border: 3px solid transparent;
+    border-radius: 34px;
+    box-shadow: hsla(0, 0%, 0%, 0.3) 0px 2px 8px;
 
     ul {
         display: flex;

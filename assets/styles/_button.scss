@@ -10,10 +10,10 @@
 
     background: linear-gradient(var(--background), var(--background))
             padding-box,
-        linear-gradient(45deg, var(--primary), var(--secondary)) border-box;
+        linear-gradient(45deg, var(--secondary), var(--primary)) border-box;
     border: 3px solid transparent;
     border-radius: 50px;
-    box-shadow: hsla(0, 0%, 0%, 0.15) 0px 2px 8px;
+    box-shadow: hsla(0, 0%, 0%, 0.3) 0px 2px 8px;
 
     cursor: pointer;
 

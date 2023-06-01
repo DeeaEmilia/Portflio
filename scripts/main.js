@@ -80,7 +80,7 @@ function updateWeatherWidget(data) {
     locationElement.textContent = `${data.name}, ${data.sys.country}`;
     temperatureElement.textContent = `${Math.round(data.main.temp)}°C`;
     conditionElement.textContent = data.weather[0].description;
-    weatherIconElement.src = `assets/weather-icons/${data.weather[0].icon}.png`;
+    weatherIconElement.src = `assets/weather-icons/${data.weather[0].icon}.svg`;
 }
 
 getUserLocation();

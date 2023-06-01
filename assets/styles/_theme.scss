@@ -1,44 +1,51 @@
+.switch {
+    display: flex;
+    align-items: center;
+}
+
 .theme-switch {
     display: inline-block;
     height: 2.5rem;
     position: relative;
     width: 4.5rem;
-  
+
     input {
-      display: none;
+        display: none;
     }
-  
+
     .slider {
-      background-color: hsl(0, 0%, 80%);
-      bottom: 0;
-      left: 0;
-      right: 0;
-      top: 0;
-      border-radius: 34px;
-      cursor: pointer;
-      position: absolute;
-      transition: 0.4s;
-      box-shadow: hsla(0, 0%, 0%, 0.15) 0px 2px 8px;
-  
-      &:before {
-        background-color: hsl(0, 0%, 100%);
-        left: 0.4rem;
-        top: 0.25rem;
-        content: '';
-        height: 2rem;
-        border-radius: 50%;
+        background: linear-gradient(var(--card), var(--card)) padding-box,
+            linear-gradient(45deg, var(--secondary), var(--primary)) border-box;
+        border: 3px solid transparent;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        top: 0;
+        border-radius: 34px;
+        cursor: pointer;
         position: absolute;
         transition: 0.4s;
-        width: 2rem;
-        box-shadow: hsla(0, 0%, 0%, 0.15) 0px 2px 8px;
-      }
+        box-shadow: hsla(0, 0%, 0%, 0.3) 0px 2px 8px;
+
+        &:before {
+            background: linear-gradient(var(--background), var(--background))
+                    padding-box,
+                linear-gradient(45deg, var(--secondary), var(--primary))
+                    border-box;
+            border: 3px solid transparent;
+            content: '';
+            height: 1.5rem;
+            width: 1.5rem;
+            top: 0.1rem;
+            left: 0.35rem;
+            border-radius: 50%;
+            position: absolute;
+            transition: 0.4s;
+            box-shadow: hsla(0, 0%, 0%, 0.3) 0px 2px 8px;
+        }
     }
-  
-    input:checked + .slider {
-      background-color: hsl(0, 0%, 24%);
-    }
-  
+
     input:checked + .slider:before {
-      transform: translateX(26px);
+        transform: translateX(1.5rem);
     }
-  }
+}

@@ -37,8 +37,8 @@ a {
   --light: hsl(0, 0%, 80%);
   --white: hsl(0, 0%, 100%);
   --black: hsl(0, 0%, 0%);
-  --primary: #07bdb7;
-  --secondary: #ef6d94;
+  --primary: #ad85ff;
+  --secondary: #07bdb7;
   --linkedin: hsl(220, 61%, 50%);
   --github: hsl(210, 12%, 19%);
   --javascript: #f7dd1d;
@@ -79,9 +79,10 @@ header {
 }
 
 nav {
-  background-color: var(--nav);
-  border-radius: 1.5rem;
-  box-shadow: hsla(0, 0%, 0%, 0.15) 0px 2px 8px;
+  background: linear-gradient(var(--background), var(--background)) padding-box, linear-gradient(45deg, var(--secondary), var(--primary)) border-box;
+  border: 3px solid transparent;
+  border-radius: 34px;
+  box-shadow: hsla(0, 0%, 0%, 0.3) 0px 2px 8px;
 }
 nav ul {
   display: flex;
@@ -113,14 +114,19 @@ nav ul li:hover, nav ul li:focus {
   font-weight: bold;
   color: var(--font);
   padding: 1rem 2rem;
-  background: linear-gradient(var(--background), var(--background)) padding-box, linear-gradient(45deg, var(--primary), var(--secondary)) border-box;
+  background: linear-gradient(var(--background), var(--background)) padding-box, linear-gradient(45deg, var(--secondary), var(--primary)) border-box;
   border: 3px solid transparent;
   border-radius: 50px;
-  box-shadow: hsla(0, 0%, 0%, 0.15) 0px 2px 8px;
+  box-shadow: hsla(0, 0%, 0%, 0.3) 0px 2px 8px;
   cursor: pointer;
 }
 .btn:hover {
   background: linear-gradient(var(--card), var(--card)) padding-box, linear-gradient(45deg, var(--primary), var(--secondary)) border-box;
+}
+
+.switch {
+  display: flex;
+  align-items: center;
 }
 
 .theme-switch {
@@ -133,7 +139,8 @@ nav ul li:hover, nav ul li:focus {
   display: none;
 }
 .theme-switch .slider {
-  background-color: hsl(0, 0%, 80%);
+  background: linear-gradient(var(--card), var(--card)) padding-box, linear-gradient(45deg, var(--secondary), var(--primary)) border-box;
+  border: 3px solid transparent;
   bottom: 0;
   left: 0;
   right: 0;
@@ -142,25 +149,23 @@ nav ul li:hover, nav ul li:focus {
   cursor: pointer;
   position: absolute;
   transition: 0.4s;
-  box-shadow: hsla(0, 0%, 0%, 0.15) 0px 2px 8px;
+  box-shadow: hsla(0, 0%, 0%, 0.3) 0px 2px 8px;
 }
 .theme-switch .slider:before {
-  background-color: hsl(0, 0%, 100%);
-  left: 0.4rem;
-  top: 0.25rem;
+  background: linear-gradient(var(--background), var(--background)) padding-box, linear-gradient(45deg, var(--secondary), var(--primary)) border-box;
+  border: 3px solid transparent;
   content: "";
-  height: 2rem;
+  height: 1.5rem;
+  width: 1.5rem;
+  top: 0.1rem;
+  left: 0.35rem;
   border-radius: 50%;
   position: absolute;
   transition: 0.4s;
-  width: 2rem;
-  box-shadow: hsla(0, 0%, 0%, 0.15) 0px 2px 8px;
-}
-.theme-switch input:checked + .slider {
-  background-color: hsl(0, 0%, 24%);
+  box-shadow: hsla(0, 0%, 0%, 0.3) 0px 2px 8px;
 }
 .theme-switch input:checked + .slider:before {
-  transform: translateX(26px);
+  transform: translateX(1.5rem);
 }
 
 .card {
@@ -171,7 +176,7 @@ nav ul li:hover, nav ul li:focus {
   background-color: var(--card);
   border-radius: 1rem;
   padding: 2rem;
-  box-shadow: hsla(0, 0%, 0%, 0.15) 0px 2px 8px;
+  box-shadow: hsla(0, 0%, 0%, 0.3) 0px 2px 8px;
   text-align: center;
 }
 .card a {
@@ -182,7 +187,7 @@ nav ul li:hover, nav ul li:focus {
   color: var(--font);
 }
 .card a:hover {
-  color: var(--secondary);
+  color: var(--primary);
 }
 .card a h3 {
   margin-top: 0.5rem;
@@ -216,7 +221,7 @@ nav ul li:hover, nav ul li:focus {
   margin-bottom: 1rem;
 }
 .about-container h1 {
-  background: -webkit-linear-gradient(45deg, var(--secondary), var(--primary));
+  background: -webkit-linear-gradient(45deg, var(--primary), var(--secondary));
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -243,7 +248,7 @@ nav ul li:hover, nav ul li:focus {
 .picture-container .picture {
   height: 6rem;
   width: 6rem;
-  background-image: url(../images/Deea.png);
+  background-image: url(../images/Deea.svg);
   background-size: cover;
   background-repeat: no-repeat;
   box-shadow: hsla(0, 0%, 0%, 0.15) 0px 2px 8px;
@@ -296,55 +301,8 @@ svg text:hover {
   font-family: "Raleway", sans-serif;
 }
 
-.css-text {
-  font-family: "Calligraphy", sans-serif;
-}
-
-.linkedin-container {
-  background-color: var(--linkedin);
-}
-.linkedin-container h3 {
-  color: var(--white);
-}
-.linkedin-container h3:hover {
-  color: var(--secondary);
-}
-
-.github-container {
-  background-color: var(--github);
-}
-.github-container:hover {
-  filter: brightness(120%);
-  cursor: pointer;
-  transition: 500ms;
-}
-.github-container h3 {
-  color: var(--white);
-}
-.github-container h3:hover {
-  color: var(--secondary);
-}
-
-.javascript-container {
-  background-color: var(--javascript);
-}
-.javascript-container h3 {
-  color: var(--black);
-}
-
-.node-container {
-  background-color: var(--white);
-}
-.node-container h3 {
-  color: var(--black);
-}
-
 .form-container {
   text-align: left;
-}
-
-.project-2 {
-  background-image: url(../images/Heroes-Arena.png);
 }
 
 @media screen and (min-width: 768px) {
