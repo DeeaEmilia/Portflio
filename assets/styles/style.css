@@ -274,33 +274,6 @@ nav ul li:hover, nav ul li:focus {
   }
 }
 
-svg text {
-  fill: var(--font);
-}
-svg text:hover {
-  cursor: pointer;
-}
-
-@media screen and (min-width: 1400px) {
-  .learning-path {
-    grid-column: span 4;
-    grid-row: span 3;
-  }
-}
-.learning-path #months .st0 {
-  fill: var(--background);
-  stroke: var(--card);
-  stroke-width: 2;
-}
-.learning-path #months .st0:hover {
-  fill: var(--card);
-  cursor: pointer;
-}
-
-.html-text {
-  font-family: "Raleway", sans-serif;
-}
-
 .form-container {
   text-align: left;
 }
@@ -385,6 +358,24 @@ svg text:hover {
     grid-column: span 3;
     grid-row: span 3;
   }
+}
+
+@media screen and (min-width: 992px) {
+  .learning-path {
+    grid-column: span 2;
+    grid-row: span 2;
+  }
+}
+@media screen and (min-width: 1400px) {
+  .learning-path {
+    grid-column: span 4;
+    grid-row: span 3;
+  }
+}
+.learning-path #months path:hover,
+.learning-path #months text:hover {
+  fill: var(--primary);
+  cursor: pointer;
 }
 
 body {

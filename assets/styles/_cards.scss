@@ -107,36 +107,6 @@
     }
 }
 
-svg text {
-    fill: var(--font);
-    &:hover {
-        cursor: pointer;
-    }
-}
-
-.learning-path {
-    @media screen and (min-width: $screen-xxl) {
-        grid-column: span 4;
-        grid-row: span 3;
-    }
-
-    #months {
-        .st0 {
-            fill: var(--background);
-            stroke: var(--card);
-            stroke-width: 2;
-            &:hover {
-                fill: var(--card);
-                cursor: pointer;
-            }
-        }
-    }
-}
-
-.html-text {
-    font-family: 'Raleway', sans-serif;
-}
-
 .form-container {
     text-align: left;
 }

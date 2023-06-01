@@ -1,0 +1,21 @@
+.learning-path {
+    @media screen and (min-width: $screen-lg) {
+        grid-column: span 2;
+        grid-row: span 2;
+    }
+
+    @media screen and (min-width: $screen-xxl) {
+        grid-column: span 4;
+        grid-row: span 3;
+    }
+
+    #months {
+        path,
+        text {
+            &:hover {
+                fill: var(--primary);
+                cursor: pointer;
+            }
+        }
+    }
+}
