@@ -74,6 +74,12 @@ header {
   justify-content: space-between;
   flex-direction: column;
   margin: 1rem 0 6rem;
+  gap: 0.5rem;
+}
+@media screen and (min-width: 768px) {
+  header {
+    flex-direction: row;
+  }
 }
 
 nav {
@@ -122,6 +128,8 @@ nav ul li:hover, nav ul li:focus {
   border: 3px solid transparent;
   border-radius: 50px;
   box-shadow: hsla(0, 0%, 0%, 0.3) 0px 2px 8px;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
   cursor: pointer;
 }
 .btn:hover {
