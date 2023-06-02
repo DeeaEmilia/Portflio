@@ -378,6 +378,34 @@ nav ul li:hover, nav ul li:focus {
   cursor: pointer;
 }
 
+#modal {
+  position: fixed;
+  z-index: 999;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+  display: none;
+}
+
+#modal-content {
+  background-color: var(--card);
+  margin: 15% auto;
+  gap: 2rem;
+  width: 400px;
+  height: 400px;
+}
+
+#modal-close {
+  float: right;
+}
+
+#modal-text {
+  text-align: left;
+}
+
 body {
   background-color: var(--background);
   color: var(--font);

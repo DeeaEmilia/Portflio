@@ -15,7 +15,6 @@
         <meta name="author" content="Andreea-Emilia Duta" />
         <meta name="robots" content="index, follow" />
         <link rel="stylesheet" href="assets/styles/style.css" />
-        <link rel="stylesheet" href="assets/styles/svg.css" />
         <link rel="stylesheet" href="" id="darkmode" />
         <title>Andreea-Emilia Duta Portfolio</title>
     </head>
@@ -112,6 +111,7 @@
 
                 <div class="card skills about learning-path">
                     <svg
+                        id="learning-path-svg"
                         version="1.1"
                         xmlns="http://www.w3.org/2000/svg"
                         xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -230,8 +230,9 @@
                         <g id="months">
                             <g id="october">
                                 <path
-                                    id="oct_00000065048232672689131800000010434963580453732284_"
-                                    class="st2"
+                                    id="oct"
+                                    data-month="october"
+                                    class="st2 month"
                                     d="M251.5,945.5c-10.2,42.1-15.6,85.7-15.6,131
 			l-229-1.2c0-66.1,6.7-126.8,21.2-187.2l223.2,57.5L251.5,945.5z"
                                 />
@@ -255,8 +256,9 @@
                             </g>
                             <g id="november">
                                 <path
-                                    id="nov_00000018197470495243384550000001530543067174846628_"
-                                    class="st2"
+                                    id="nov"
+                                    data-month="november"
+                                    class="st2 month"
                                     d="M255.2,930.5l-0.1,0.3L32,873.7
 			C48.4,809.5,72.5,749,103.3,693l201.2,115.6C283.3,847.2,266.8,887.1,255.2,930.5z"
                                 />
@@ -280,8 +282,9 @@
                             </g>
                             <g id="december">
                                 <path
-                                    id="dec_00000177470368110520570520000003926362110617752249_"
-                                    class="st2"
+                                    id="dec"
+                                    data-month="december"
+                                    class="st2 month"
                                     d="M393.9,688.3c-31.5,32.3-59.1,68.3-82,107.4
 			l-201.1-116C143.5,623,183.1,571.2,228.5,525L393.9,688.3z"
                                 />
@@ -305,8 +308,9 @@
                             </g>
                             <g id="january">
                                 <path
-                                    id="jan_00000011001832339423886040000016407445230523629736_"
-                                    class="st2"
+                                    id="jan"
+                                    data-month="january"
+                                    class="st2 month"
                                     d="M512,595.5c-39.1,23.1-75.1,50.7-107.3,82
 			L238.8,514.8c46.5-45.5,98.7-85.1,155.5-118L512,595.5z"
                                 />
@@ -331,7 +335,8 @@
                             <g id="february">
                                 <path
                                     id="feb"
-                                    class="st2"
+                                    data-month="february"
+                                    class="st2 month"
                                     d="M648.3,537c-43.7,12.4-85.2,29.7-123.9,51.3l-116-199.4l0,0c56-30.9,116.3-55.4,179.9-72.5
 			L648.3,537z"
                                 />
@@ -356,7 +361,8 @@
                             <g id="march">
                                 <path
                                     id="mar"
-                                    class="st2"
+                                    data-month="march"
+                                    class="st2 month"
                                     d="M795.9,287.4V515c-46.3,1-91.3,7.4-134.3,18.5l-58.5-221C664.8,297,729.4,288.4,795.9,287.4z"
                                 />
                                 <rect
@@ -380,7 +386,8 @@
                             <g id="april">
                                 <path
                                     id="apr"
-                                    class="st2"
+                                    data-month="april"
+                                    class="st2 month"
                                     d="M1003.5,311l-58.3,219.6c-43.6-10.3-89.1-15.7-135.9-15.7l0.3-227.6
 			C876.4,287.3,941.4,295.5,1003.5,311z"
                                 />
@@ -402,12 +409,11 @@
                                     </tspan>
                                 </text>
                             </g>
-                            <g
-                                id="may_00000072241699818907335570000014361189683875813024_"
-                            >
+                            <g id="may">
                                 <path
                                     id="may"
-                                    class="st2"
+                                    data-month="may"
+                                    class="st2 month"
                                     d="M1199.3,388.8L1086.1,584c-39.6-21.3-82-38.2-126.7-49.9l59.8-219
 			C1082.7,332.3,1143.1,357.2,1199.3,388.8z"
                                 />
@@ -432,7 +438,8 @@
                             <g id="june">
                                 <path
                                     id="jun"
-                                    class="st2"
+                                    data-month="june"
+                                    class="st2 month"
                                     d="M1366,513.4l-156.5,159.9c-33.5-31.9-70.9-59.7-111.6-82.8l114.6-194.1
 			C1268.2,429.1,1319.7,468.4,1366,513.4z"
                                 />
@@ -457,7 +464,8 @@
                             <g id="july">
                                 <path
                                     id="jul"
-                                    class="st2"
+                                    data-month="july"
+                                    class="st2 month"
                                     d="M1496.3,678.4l-194.1,109.9c-23.9-39.3-51-73.9-83.7-106.1l0,0l159.3-157
 			C1423.1,571.1,1462.9,622.5,1496.3,678.4z"
                                 />
@@ -482,7 +490,8 @@
                             <g id="august">
                                 <path
                                     id="aug"
-                                    class="st2"
+                                    data-month="august"
+                                    class="st2 month"
                                     d="M1579.8,871.1l-217.2,57.1c-12.3-44.5-29.9-86.7-52.3-125.9l194.8-108.6
 			C1536.6,748.9,1561.8,808.4,1579.8,871.1z"
                                 />
@@ -507,7 +516,8 @@
                             <g id="september">
                                 <path
                                     id="sep"
-                                    class="st2"
+                                    data-month="september"
+                                    class="st2 month"
                                     d="M1611.6,1075.9l-229,0.6c0-45.9-5.5-90.5-16-133l217.4-57C1600.2,947,1609.6,1010.4,1611.6,1075.9z"
                                 />
                                 <rect
@@ -693,9 +703,16 @@
                     </form>
                 </div>
             </main>
+            <div id="modal">
+                <div id="modal-content" class="card">
+                    <h2 id="modal-title"></h2>
+                    <p id="modal-text"></p>
+                    <button id="modal-close" class="btn">Close</button>
+                </div>
+            </div>
         </div>
-
         <script src="scripts/main.js"></script>
         <script src="scripts/filter.js"></script>
+        <script src="scripts/months.js"></script>
     </body>
 </html>
