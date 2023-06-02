@@ -65,6 +65,9 @@ nav {
                 cursor: pointer;
                 margin: 0 0.2rem;
             }
+            @media screen and (min-width: $screen-md) {
+                font-size: 1rem;
+            }
         }
     }
 }
