@@ -373,17 +373,8 @@ nav ul li:hover, nav ul li:focus {
   }
 }
 
-@media screen and (min-width: 992px) {
-  .learning-path {
-    grid-column: span 2;
-    grid-row: span 2;
-  }
-}
-@media screen and (min-width: 1400px) {
-  .learning-path {
-    grid-column: span 4;
-    grid-row: span 3;
-  }
+.learning-path .title {
+  font-weight: 700;
 }
 .learning-path #months text {
   pointer-events: none;
@@ -412,6 +403,18 @@ nav ul li:hover, nav ul li:focus {
   100% {
     opacity: 1;
     transform: translateY(0);
+  }
+}
+@media screen and (min-width: 992px) {
+  .learning-path {
+    grid-column: span 2;
+    grid-row: span 2;
+  }
+}
+@media screen and (min-width: 1400px) {
+  .learning-path {
+    grid-column: span 4;
+    grid-row: span 3;
   }
 }
 
