@@ -10,12 +10,23 @@
     }
 
     #months {
-        path,
-        text {
+        .month {
             &:hover {
                 fill: var(--primary);
                 cursor: pointer;
             }
+        }
+        #jun {
+            fill: #9067e2;
+            &:hover {
+                fill: var(--primary-darker);
+                cursor: pointer;
+            }
+        }
+        #jul,
+        #aug,
+        #sep {
+            fill: var(--primary-darker);
         }
     }
 }

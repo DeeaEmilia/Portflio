@@ -39,9 +39,7 @@ a {
   --black: hsl(0, 0%, 0%);
   --primary: #ad85ff;
   --secondary: #07bdb7;
-  --linkedin: hsl(220, 61%, 50%);
-  --github: hsl(210, 12%, 19%);
-  --javascript: #f7dd1d;
+  --primary-darker: #7b67d1;
 }
 
 .top-bar {
@@ -372,10 +370,21 @@ nav ul li:hover, nav ul li:focus {
     grid-row: span 3;
   }
 }
-.learning-path #months path:hover,
-.learning-path #months text:hover {
+.learning-path #months .month:hover {
   fill: var(--primary);
   cursor: pointer;
+}
+.learning-path #months #jun {
+  fill: #9067e2;
+}
+.learning-path #months #jun:hover {
+  fill: var(--primary-darker);
+  cursor: pointer;
+}
+.learning-path #months #jul,
+.learning-path #months #aug,
+.learning-path #months #sep {
+  fill: var(--primary-darker);
 }
 
 #modal {
