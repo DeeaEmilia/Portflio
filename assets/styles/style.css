@@ -385,6 +385,9 @@ nav ul li:hover, nav ul li:focus {
     grid-row: span 3;
   }
 }
+.learning-path #months text {
+  pointer-events: none;
+}
 .learning-path #months .month {
   stroke-dasharray: 1000;
   stroke-dashoffset: 0;

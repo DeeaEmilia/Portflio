@@ -10,6 +10,9 @@
     }
 
     #months {
+        text {
+            pointer-events: none;
+        }
         .month {
             stroke-dasharray: 1000;
             stroke-dashoffset: 0;
