@@ -34,12 +34,12 @@ const monthData = {
         '▪ Prototype',
     ],
     january: [
-        'In January, I started learning about modern JavaScript frameworks and libraries, starting with React.',
-        '▪ Git',
+        'In January, I continued developing my skills in JavaScript.',
+        '▪ Git, Bash Shell',
         '▪ Package Manager - npm',
         '▪ CSS Preprocessor - Sass',
         '▪ Basic Knowledge of CORS',
-        '▪ Linters and Formatters - Prettier&ESLint',
+        '▪ Linters and Formatters - Prettier & ESLint',
     ],
     february: [
         'I started learning about modern JavaScript frameworks and libraries, starting with React.',
