@@ -11,22 +11,15 @@
 
     #months {
         .month {
+            stroke-dasharray: 1000;
+            stroke-dashoffset: 0;
+            transition: stroke-dashoffset 2s ease-in-out;
+
             &:hover {
+                stroke-dashoffset: 1000;
                 fill: var(--primary);
                 cursor: pointer;
             }
-        }
-        #jun {
-            fill: #9067e2;
-            &:hover {
-                fill: var(--primary-darker);
-                cursor: pointer;
-            }
-        }
-        #jul,
-        #aug,
-        #sep {
-            fill: var(--primary-darker);
         }
     }
 }
