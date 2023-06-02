@@ -13,13 +13,35 @@
         .month {
             stroke-dasharray: 1000;
             stroke-dashoffset: 0;
-            transition: stroke-dashoffset 2s ease-in-out;
+            transition: stroke-dashoffset 2s;
 
-            &:hover {
+            &:hover,
+            &:focus,
+            &:active {
                 stroke-dashoffset: 1000;
-                fill: var(--primary);
+                fill: var(--planet-light);
                 cursor: pointer;
             }
+        }
+    }
+
+    #stars {
+        .star {
+            animation: fall 2s ease-in-out forwards;
+        }
+    }
+
+    @keyframes fall {
+        0% {
+            opacity: 0;
+            transform: translateY(-50px);
+        }
+        50% {
+            opacity: 1;
+        }
+        100% {
+            opacity: 1;
+            transform: translateY(0);
         }
     }
 }

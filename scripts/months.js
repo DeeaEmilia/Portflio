@@ -10,7 +10,7 @@ svg.addEventListener('click', function (e) {
 // Your data for each month
 const monthData = {
     october: [
-        'I began my Frontend Development journey in October 2022. I started with:',
+        'I began my Frontend Development journey in October 2022 with:',
         '▪ HTML and CSS Basics',
         '▪ Semantic HTML',
         '▪ Forms and Validation',

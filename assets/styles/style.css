@@ -39,6 +39,11 @@ a {
   --black: hsl(0, 0%, 0%);
   --primary: #ad85ff;
   --secondary: #07bdb7;
+  --path: #484157;
+  --fill: #e2d4ff;
+  --planet-dark: #7b67d1;
+  --planet-light: #ad85ff;
+  --stars: hsl(0, 0%, 100%);
 }
 
 .top-bar {
@@ -89,6 +94,7 @@ nav ul {
 nav ul li {
   color: var(--font);
   font-weight: bold;
+  font-size: 0.5rem;
   border-radius: 1rem;
   padding: 0.5rem 1rem;
   transition: 250ms ease-in;
@@ -185,6 +191,7 @@ nav ul li:hover, nav ul li:focus {
 }
 .card a:hover {
   color: var(--primary);
+  transform: scale(1.1);
 }
 .card a h3 {
   margin-top: 0.5rem;
@@ -372,12 +379,28 @@ nav ul li:hover, nav ul li:focus {
 .learning-path #months .month {
   stroke-dasharray: 1000;
   stroke-dashoffset: 0;
-  transition: stroke-dashoffset 2s ease-in-out;
+  transition: stroke-dashoffset 2s;
 }
-.learning-path #months .month:hover {
+.learning-path #months .month:hover, .learning-path #months .month:focus, .learning-path #months .month:active {
   stroke-dashoffset: 1000;
-  fill: var(--primary);
+  fill: var(--planet-light);
   cursor: pointer;
+}
+.learning-path #stars .star {
+  animation: fall 2s ease-in-out forwards;
+}
+@keyframes fall {
+  0% {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 #modal {
