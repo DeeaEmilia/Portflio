@@ -27,10 +27,11 @@
 header {
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap;
+    flex-direction: column;
 
     @media screen and (min-width: $screen-md) {
         margin: 1rem 0 6rem;
+        flex-direction: row;
     }
 }
 
@@ -50,7 +51,7 @@ nav {
         li {
             color: var(--font);
             font-weight: bold;
-            font-size: 0.5rem;
+            font-size: 0.7rem;
             border-radius: 1rem;
             padding: 0.5rem 1rem;
             transition: 250ms ease-in;
