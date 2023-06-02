@@ -28,11 +28,7 @@ header {
     display: flex;
     justify-content: space-between;
     flex-direction: column;
-
-    @media screen and (min-width: $screen-md) {
-        margin: 1rem 0 6rem;
-        flex-direction: row;
-    }
+    margin: 1rem 0 6rem;
 }
 
 nav {
