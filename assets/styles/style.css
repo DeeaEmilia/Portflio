@@ -446,6 +446,46 @@ nav ul li:hover, nav ul li:focus {
   text-align: left;
 }
 
+footer {
+  color: var(--font);
+  padding: 5rem 0 0;
+}
+footer .footer-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+}
+footer .footer-container .copyright p {
+  margin: 0;
+  font-size: 14px;
+}
+footer .footer-container .social a {
+  margin-left: 20px;
+}
+footer .footer-container .social a:first-child {
+  margin-left: 0;
+}
+footer .footer-container .social a img {
+  width: 24px;
+  height: 24px;
+}
+footer .footer-container .legal {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+footer .footer-container .legal a {
+  color: var(--font);
+  font-size: 14px;
+  text-decoration: none;
+  margin: 0 2rem;
+}
+footer .footer-container .legal a:hover {
+  color: var(--primary);
+}
+
 body {
   background-color: var(--background);
   color: var(--font);
