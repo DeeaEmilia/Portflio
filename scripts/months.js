@@ -7,7 +7,6 @@ svg.addEventListener('click', function (e) {
     }
 });
 
-// Your data for each month
 const monthData = {
     october: [
         'I began my Frontend Development journey in October 2022 with:',
@@ -49,6 +48,7 @@ const monthData = {
         '▪ Rest APIs',
         '▪ Basic Knowledge of CORS',
         '▪ Package Manager - npm',
+        '▪ Module Bundlers - Vite, esbuild',
     ],
     march: [
         'In March I started learning about modern JavaScript frameworks and libraries, starting with React.',
@@ -90,19 +90,15 @@ function openModal(month) {
     const title = document.getElementById('modal-title');
     const text = document.getElementById('modal-text');
 
-    // populate the modal based on the month
     title.textContent =
         'Month: ' + month.charAt(0).toUpperCase() + month.slice(1);
 
-    // Create an unordered list from the monthData
     text.innerHTML =
         '<ul><li>' + monthData[month].join('</li><li>') + '</li></ul>';
 
-    // display the modal
     modal.style.display = 'block';
 }
 
-// add click event listener
 svg.addEventListener('click', function (e) {
     if (e.target.classList.contains('month')) {
         let month = e.target.dataset.month;
@@ -110,14 +106,12 @@ svg.addEventListener('click', function (e) {
     }
 });
 
-// add an event listener to close the modal when clicking outside the modal-content
 document.getElementById('modal').addEventListener('click', function (e) {
     if (e.target == this) {
         this.style.display = 'none';
     }
 });
 
-// add an event listener to close the modal when the close button is clicked
 document.getElementById('modal-close').addEventListener('click', function () {
     document.getElementById('modal').style.display = 'none';
 });
