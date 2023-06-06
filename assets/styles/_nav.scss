@@ -2,13 +2,6 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-
-    p {
-        font-family: 'Calligraphy', sans-serif;
-        font-weight: 700;
-        opacity: 0.1;
-        font-size: 1.5rem;
-    }
 }
 
 .time-container {
@@ -72,4 +65,10 @@ nav {
             }
         }
     }
+}
+.signature {
+    font-family: 'Calligraphy', sans-serif;
+    font-weight: 700;
+    opacity: 0.1;
+    font-size: 1.5rem;
 }

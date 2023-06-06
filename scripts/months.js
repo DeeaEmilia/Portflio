@@ -112,6 +112,6 @@ document.getElementById('modal').addEventListener('click', function (e) {
     }
 });
 
-document.getElementById('modal-close').addEventListener('click', function () {
+document.querySelector('.modal-close').addEventListener('click', function () {
     document.getElementById('modal').style.display = 'none';
 });

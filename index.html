@@ -22,7 +22,7 @@
     <body>
         <div class="container">
             <div class="top-bar">
-                <p>Deea-Emilia</p>
+                <p class="signature">Deea-Emilia</p>
                 <div class="time-container">
                     <div class="time">00:00</div>
                     <img src="assets/images/signal-bar.png" alt="signal bar" />
@@ -41,14 +41,11 @@
                         <li class="filter" data-filter="about">About</li>
                         <li class="filter" data-filter="skills">Skills</li>
                         <li class="filter" data-filter="projects">Projects</li>
-                        <li class="filter" data-filter="certifications">
-                            Certifications
-                        </li>
+                        <li class="filter" data-filter="blog">Blog</li>
                     </ul>
                 </nav>
-                <div class="contact">
-                    <a href="#contact" class="btn">Contact</a>
-                </div>
+
+                <button class="btn contact-btn">Contact</button>
             </header>
 
             <main class="main-content">
@@ -676,11 +673,17 @@
                     <img src="assets/images/materialui.svg" alt="" />
                     <h3>MaterialUI</h3>
                 </div>
+            </main>
 
-                <!-- <div
-                    class="card about certifications form-container"
-                    id="contact"
-                >
+            <div id="modal">
+                <div id="modal-content" class="card skills about">
+                    <h2 id="modal-title"></h2>
+                    <p id="modal-text"></p>
+                    <button class="modal-close btn">Close</button>
+                </div>
+            </div>
+            <div class="contact-modal">
+                <div class="contact-content card form-container">
                     <h3>Contact Me</h3>
                     <form
                         name="contact"
@@ -720,7 +723,7 @@
                                 aria-label="Your message"
                             ></textarea>
                         </p>
-                        <p>
+                        <div class="btn-container">
                             <button
                                 type="submit"
                                 title="Send your message"
@@ -728,49 +731,47 @@
                             >
                                 Send
                             </button>
-                        </p>
+                            <button class="btn contact-close">Close</button>
+                        </div>
                     </form>
-                </div> -->
-            </main>
-            <footer>
-                <footer>
-                    <div class="footer-container">
-                        <div class="legal">
-                            <a href="privacy.html">Privacy Policy</a>
-                            <a href="terms.html">Terms of Service</a>
-                            <a href="cookies.html">Cookies Policy</a>
-                        </div>
-
-                        <div class="copyright">
-                            <p>
-                                &copy; 2023 Andreea-Emilia Duta. All rights
-                                reserved.
-                            </p>
-                        </div>
-                        <div class="social">
-                            <a
-                                href="https://www.linkedin.com/in/deea-emilia-duta/"
-                                ><img
-                                    src="assets/images/linkedin.svg"
-                                    alt="LinkedIn"
-                            /></a>
-                            <a href="https://github.com/DeeaEmilia"
-                                ><img
-                                    src="assets/images/github.svg"
-                                    alt="Github"
-                            /></a>
-                        </div>
-                    </div>
-                </footer>
-            </footer>
-            <div id="modal">
-                <div id="modal-content" class="card skills about">
-                    <h2 id="modal-title"></h2>
-                    <p id="modal-text"></p>
-                    <button id="modal-close" class="btn">Close</button>
                 </div>
             </div>
         </div>
+        <footer>
+            <div class="footer-container">
+                <div class="footer-contact">
+                    <h2>Wanna know more?</h2>
+
+                    <div class="social">
+                        <h4>Contact me now</h4>
+                        <p>deeaemiliad@gmail.com</p>
+                        <p>+40734033728</p>
+                        <p class="signature">Deea-Emilia</p>
+                        <a href="https://www.linkedin.com/in/deea-emilia-duta/"
+                            ><img
+                                src="assets/images/linkedin.svg"
+                                alt="LinkedIn"
+                        /></a>
+                        <a href="https://github.com/DeeaEmilia"
+                            ><img src="assets/images/github.svg" alt="Github"
+                        /></a>
+                    </div>
+                    <button class="btn contact-btn">Contact</button>
+                </div>
+
+                <div class="legal">
+                    <a href="privacy.html">Privacy Policy</a>
+                    <a href="terms.html">Terms of Service</a>
+                    <a href="cookies.html">Cookies Policy</a>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>
+                    Copyright &copy; 2023 Andreea-Emilia Duta. All rights
+                    reserved.
+                </p>
+            </div>
+        </footer>
         <script src="scripts/main.js"></script>
         <script src="scripts/filter.js"></script>
         <script src="scripts/months.js"></script>

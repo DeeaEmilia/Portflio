@@ -3,10 +3,6 @@
   src: url(../fonts/Raleway-Regular.woff2);
 }
 @font-face {
-  font-family: "Raleway-Bold";
-  src: url(../fonts/Raleway-Bold.ttf);
-}
-@font-face {
   font-family: "Calligraphy";
   src: url(../fonts/Calligraphy.ttf);
 }
@@ -50,12 +46,6 @@ a {
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
-.top-bar p {
-  font-family: "Calligraphy", sans-serif;
-  font-weight: 700;
-  opacity: 0.1;
-  font-size: 1.5rem;
 }
 
 .time-container {
@@ -114,6 +104,13 @@ nav ul li:hover, nav ul li:focus {
   nav ul li {
     font-size: 1rem;
   }
+}
+
+.signature {
+  font-family: "Calligraphy", sans-serif;
+  font-weight: 700;
+  opacity: 0.1;
+  font-size: 1.5rem;
 }
 
 .btn {
@@ -204,6 +201,7 @@ nav ul li:hover, nav ul li:focus {
 }
 .card a h3 {
   margin-top: 0.5rem;
+  font-weight: bold;
 }
 .card img {
   width: 5rem;
@@ -306,8 +304,7 @@ nav ul li:hover, nav ul li:focus {
   opacity: 0.9;
 }
 .projects h3 {
-  font-size: 2rem;
-  font-weight: bolder;
+  font-size: 1.5rem;
   background-color: hsl(0, 0%, 100%);
   width: 100%;
   color: black;
@@ -348,7 +345,6 @@ nav ul li:hover, nav ul li:focus {
   display: block;
   margin-bottom: 0.5rem;
   color: var(--font);
-  font-weight: bold;
 }
 .form-container form p .input {
   width: 500px;
@@ -371,6 +367,10 @@ nav ul li:hover, nav ul li:focus {
     grid-column: span 3;
     grid-row: span 3;
   }
+}
+
+.weather-widget > * {
+  font-weight: bold;
 }
 
 .learning-path .title {
@@ -438,28 +438,63 @@ nav ul li:hover, nav ul li:focus {
   height: 400px;
 }
 
-#modal-close {
-  float: right;
-}
-
 #modal-text {
   text-align: left;
 }
 
+.contact-modal {
+  position: fixed;
+  z-index: 999;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+  display: none;
+}
+
+.contact-content {
+  background-color: var(--card);
+  margin: 15% auto;
+  gap: 2rem;
+  padding: 2rem;
+  width: 80%;
+  max-width: 800px;
+}
+
+.btn-container {
+  display: flex;
+}
+
 footer {
   color: var(--font);
-  padding: 5rem 0 0;
+  padding: 5rem 0 3rem;
+  background-color: var(--card);
+  margin-top: 15rem;
 }
 footer .footer-container {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: space-between;
   align-items: center;
   gap: 2rem;
+  margin: 0 10rem;
 }
-footer .footer-container .copyright p {
-  margin: 0;
-  font-size: 14px;
+footer .footer-container .footer-contact {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-items: center;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 3rem;
+}
+footer .footer-container .footer-contact h2 {
+  grid-column: span 2;
+  font-size: 3rem;
+}
+footer .footer-container .footer-contact h4 {
+  color: var(--primary);
 }
 footer .footer-container .social a {
   margin-left: 20px;
@@ -473,6 +508,7 @@ footer .footer-container .social a img {
 }
 footer .footer-container .legal {
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
   margin-bottom: 20px;
 }
@@ -484,6 +520,11 @@ footer .footer-container .legal a {
 }
 footer .footer-container .legal a:hover {
   color: var(--primary);
+}
+footer .copyright p {
+  margin: 0;
+  font-size: 14px;
+  text-align: center;
 }
 
 body {

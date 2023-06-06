@@ -23,6 +23,7 @@
 
         h3 {
             margin-top: 0.5rem;
+            font-weight: bold;
         }
     }
     img {
@@ -127,8 +128,7 @@
     opacity: 0.9;
 
     h3 {
-        font-size: 2rem;
-        font-weight: bolder;
+        font-size: 1.5rem;
         background-color: hsl(0, 0%, 100%);
         width: 100%;
         color: black;
@@ -171,7 +171,6 @@
                 display: block;
                 margin-bottom: 0.5rem;
                 color: var(--font);
-                font-weight: bold;
             }
 
             .input {
@@ -204,4 +203,7 @@
         grid-column: span 3;
         grid-row: span 3;
     }
+}
+.weather-widget > * {
+    font-weight: bold;
 }

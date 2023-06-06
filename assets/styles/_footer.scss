@@ -1,18 +1,31 @@
 footer {
     color: var(--font);
-    padding: 5rem 0 0;
+    padding: 5rem 0 3rem;
+    background-color: var(--card);
+    margin-top: 15rem;
 
     .footer-container {
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         justify-content: space-between;
         align-items: center;
         gap: 2rem;
+        margin: 0 10rem;
 
-        .copyright {
-            p {
-                margin: 0;
-                font-size: 14px;
+        .footer-contact {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            justify-items: center;
+            align-items: center;
+            gap: 1rem;
+            margin-bottom: 3rem;
+
+            h2 {
+                grid-column: span 2;
+                font-size: 3rem;
+            }
+            h4 {
+                color: var(--primary);
             }
         }
 
@@ -33,6 +46,7 @@ footer {
 
         .legal {
             display: flex;
+            flex-direction: column;
             justify-content: space-between;
             margin-bottom: 20px;
 
@@ -46,6 +60,14 @@ footer {
                     color: var(--primary);
                 }
             }
+        }
+    }
+
+    .copyright {
+        p {
+            margin: 0;
+            font-size: 14px;
+            text-align: center;
         }
     }
 }
