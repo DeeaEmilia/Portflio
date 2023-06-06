@@ -1,16 +1,15 @@
 :root {
-    --background: #e8e8e8;
+    --background: hsl(0, 0%, 91%);
     --card: hsl(0, 0%, 100%);
-    --font: #3d3d3d;
-    --nav: hsl(0, 0%, 88%);
+    --font: hsl(0, 0%, 24%);
+    --slider: hsl(0, 0%, 94%);
+    --button: hsl(0, 0%, 100%);
     --light: hsl(0, 0%, 80%);
-    --white: hsl(0, 0%, 100%);
     --black: hsl(0, 0%, 0%);
     --primary: #ad85ff;
     --secondary: #07bdb7;
-    --path: #484157;
-    --fill: #e2d4ff;
-    --planet-dark: #7b67d1;
-    --planet-light: #ad85ff;
+    --fill: hsl(0, 0%, 95%);
+    --planet-dark: #7f77ac;
+    --planet-light: #9d96c0;
     --stars: hsl(0, 0%, 100%);
 }

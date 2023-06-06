@@ -14,8 +14,7 @@
     }
 
     .slider {
-        background: linear-gradient(var(--card), var(--card)) padding-box,
-            linear-gradient(45deg, var(--secondary), var(--primary)) border-box;
+        background-color: var(--background);
         border: 3px solid transparent;
         bottom: 0;
         left: 0;
@@ -25,13 +24,10 @@
         cursor: pointer;
         position: absolute;
         transition: 0.4s;
-        box-shadow: hsla(0, 0%, 0%, 0.3) 0px 2px 8px;
+        box-shadow: hsla(0, 0%, 0%, 0.5) 0px 2px 8px;
 
         &:before {
-            background: linear-gradient(var(--background), var(--background))
-                    padding-box,
-                linear-gradient(45deg, var(--secondary), var(--primary))
-                    border-box;
+            background-color: var(--slider);
             border: 3px solid transparent;
             content: '';
             height: 1.5rem;
@@ -41,7 +37,7 @@
             border-radius: 50%;
             position: absolute;
             transition: 0.4s;
-            box-shadow: hsla(0, 0%, 0%, 0.3) 0px 2px 8px;
+            box-shadow: hsla(0, 0%, 0%, 0.5) 0px 2px 8px;
         }
     }
 

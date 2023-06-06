@@ -1,28 +1,42 @@
 footer {
     color: var(--font);
-    padding: 5rem 0 3rem;
     background-color: var(--card);
     margin-top: 15rem;
+    padding: 5rem 0 3rem;
+
+    @media screen and (min-width: $screen-xl) {
+        padding: 5rem 0 3rem;
+    }
 
     .footer-container {
-        display: flex;
-        flex-direction: row;
+        display: grid;
+
         justify-content: space-between;
+        justify-items: center;
         align-items: center;
         gap: 2rem;
-        margin: 0 10rem;
+
+        @media screen and (min-width: $screen-md) {
+            grid-template-columns: repeat(3, 1fr);
+            margin: 0 10rem;
+        }
 
         .footer-contact {
             display: grid;
-            grid-template-columns: repeat(2, 1fr);
             justify-items: center;
             align-items: center;
             gap: 1rem;
             margin-bottom: 3rem;
 
+            @media screen and (min-width: $screen-sm) {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
             h2 {
-                grid-column: span 2;
                 font-size: 3rem;
+                @media screen and (min-width: $screen-sm) {
+                    grid-column: span 2;
+                }
             }
             h4 {
                 color: var(--primary);

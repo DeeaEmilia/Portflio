@@ -30,9 +30,7 @@ header {
 }
 
 nav {
-    background: linear-gradient(var(--background), var(--background))
-            padding-box,
-        linear-gradient(45deg, var(--secondary), var(--primary)) border-box;
+    background-color: var(--background);
     border: 3px solid transparent;
     border-radius: 34px;
     box-shadow: hsla(0, 0%, 0%, 0.3) 0px 2px 8px;

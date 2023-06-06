@@ -1,13 +1,11 @@
 :root {
     --background: hsl(0, 0%, 32%);
     --card: hsl(0, 0%, 24%);
-    --font: hsl(0, 0%, 100%);
-    --slider: hsl(0, 0%, 17%);
-    --white: hsl(0, 0%, 100%);
-    --path: #cbcbcb;
-    --fill: #4fb796;
+    --font: #d1d3d4;
+    --slider: hsl(0, 0%, 41%);
+    --button: hsl(0, 0%, 17%);
+    --fill: #c1f9e7;
     --planet-dark: #08807c;
     --planet-light: #07bdb7;
-    --stars: #f6ff7f;
-    --primary: #4fb796;
+    --stars: #f9ffa6;
 }

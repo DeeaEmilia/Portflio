@@ -17,6 +17,13 @@ if (currentTheme) {
 }
 
 function switchTheme(event) {
+    const theme = event.target.checked ? 'dark' : 'light';
+    const images = document.querySelectorAll('.card-image');
+
+    for (let img of images) {
+        img.src = img.dataset[theme];
+    }
+
     if (event.target.checked) {
         document.querySelector('#darkmode').href =
             './assets/styles/darkmode.css';
@@ -24,6 +31,24 @@ function switchTheme(event) {
     } else {
         document.querySelector('#darkmode').href = '';
         localStorage.setItem('theme', 'light');
+    }
+}
+
+if (currentTheme) {
+    const images = document.querySelectorAll('.card-image');
+
+    for (let img of images) {
+        img.src = img.dataset[currentTheme];
+    }
+
+    if (currentTheme === 'light') {
+        document.querySelector('#darkmode').href = '';
+    }
+
+    if (currentTheme === 'dark') {
+        toggleSwitch.checked = true;
+        document.querySelector('#darkmode').href =
+            './assets/styles/darkmode.css';
     }
 }
 
