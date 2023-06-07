@@ -240,24 +240,28 @@ nav ul li:hover, nav ul li:focus, nav ul li:active {
     font-size: 3rem;
   }
 }
-.card a {
+.card img {
+  width: 5rem;
+  height: 5rem;
+}
+
+.github-container a,
+.linkedin-container a {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   color: var(--font);
 }
-.card a:hover {
+.github-container a:hover,
+.linkedin-container a:hover {
   color: var(--primary);
   transform: scale(1.1);
 }
-.card a h3 {
+.github-container a h3,
+.linkedin-container a h3 {
   margin-top: 0.5rem;
   font-weight: bold;
-}
-.card img {
-  width: 5rem;
-  height: 5rem;
 }
 
 .about-container {
@@ -294,6 +298,10 @@ nav ul li:hover, nav ul li:focus, nav ul li:active {
 }
 .about-container .btn {
   margin-top: 3rem;
+}
+.about-container .btn:hover {
+  transform: scale(1);
+  color: var(--font);
 }
 
 .about-me {
@@ -342,26 +350,75 @@ nav ul li:hover, nav ul li:focus, nav ul li:active {
 }
 
 .projects {
+  position: relative;
+  color: var(--card);
+  transition: filter 0.3s ease-in;
+  min-height: 300px;
   background-size: cover;
+  background-repeat: no-repeat;
   background-position: center;
-  background-color: hsla(0, 0%, 1%, 0.6);
-  background-blend-mode: multiply;
-  opacity: 0.9;
+}
+.projects::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0);
+  transition: background 0.3s ease-in;
+  z-index: 1;
+  border-radius: 1rem;
+}
+.projects .btn-container {
+  visibility: hidden;
+  z-index: 2;
 }
 .projects h3 {
-  font-size: 1.5rem;
-  background-color: hsl(0, 0%, 100%);
-  width: 100%;
-  color: black;
-  border-radius: 0.5rem;
+  color: white;
+  font-size: 2.5rem;
+  font-weight: 700;
+  visibility: hidden;
+  z-index: 2;
 }
-.projects:hover {
-  background-color: transparent;
-  background-blend-mode: multiply;
-  opacity: 1;
+.projects:hover::before {
+  background: rgba(0, 0, 0, 0.7);
+}
+.projects:hover .btn-container {
+  visibility: visible;
 }
 .projects:hover h3 {
-  visibility: hidden;
+  visibility: visible;
+}
+@media screen and (min-width: 768px) {
+  .projects {
+    grid-row: span 2;
+    grid-column: span 2;
+  }
+}
+
+.project-1 {
+  background-image: url(/assets/images/Gadgeteen.png);
+}
+
+.project-2 {
+  background-image: url(/assets/images/prismatic-pay.png);
+}
+
+.project-3 {
+  background-image: url(/assets/images/weather-app.png);
+}
+
+.project-4 {
+  background-image: url(/assets/images/tutoro.png);
+}
+
+.project-5 {
+  background-image: url(/assets/images/rock-paper-scissors.png);
+}
+
+.project-6 {
+  background-image: url(/assets/images/heroes-arena.png);
 }
 
 .weather-widget > * {
@@ -452,10 +509,6 @@ nav ul li:hover, nav ul li:focus, nav ul li:active {
   max-width: 800px;
 }
 
-.btn-container {
-  display: flex;
-}
-
 .form-container {
   display: flex;
   justify-content: center;
@@ -508,7 +561,7 @@ nav ul li:hover, nav ul li:focus, nav ul li:active {
 footer {
   color: var(--font);
   background-color: var(--card);
-  margin-top: 15rem;
+  margin-top: 6rem;
   padding: 5rem 0 3rem;
 }
 @media screen and (min-width: 1200px) {
@@ -599,6 +652,7 @@ body {
   display: grid;
   gap: 2rem;
   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  min-height: 50vh;
 }
 @media screen and (min-width: 1920px) {
   .main-content {
@@ -606,10 +660,21 @@ body {
   }
 }
 
+.btn-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+
+.subtitle {
+  grid-column: 1/-1;
+  text-align: center;
+}
+
 .active {
   background-color: var(--card);
 }
 
 .show {
-  display: flex;
+  display: grid;
 }/*# sourceMappingURL=style.css.map */

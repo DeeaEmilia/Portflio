@@ -13,6 +13,14 @@
         font-size: 3rem;
     }
 
+    img {
+        width: 5rem;
+        height: 5rem;
+    }
+}
+
+.github-container,
+.linkedin-container {
     a {
         display: flex;
         justify-content: center;
@@ -29,10 +37,6 @@
             margin-top: 0.5rem;
             font-weight: bold;
         }
-    }
-    img {
-        width: 5rem;
-        height: 5rem;
     }
 }
 
@@ -73,6 +77,10 @@
 
     .btn {
         margin-top: 3rem;
+        &:hover {
+            transform: scale(1);
+            color: var(--font);
+        }
     }
 }
 
@@ -118,29 +126,78 @@
 }
 
 .projects {
+    position: relative;
+    color: var(--card);
+    transition: filter 0.3s ease-in;
+    min-height: 300px;
     background-size: cover;
+    background-repeat: no-repeat;
     background-position: center;
-    background-color: hsla(0, 0%, 1%, 0.6);
-    background-blend-mode: multiply;
-    opacity: 0.9;
+
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background: rgba(0, 0, 0, 0);
+        transition: background 0.3s ease-in;
+        z-index: 1;
+        border-radius: 1rem;
+    }
+
+    .btn-container {
+        visibility: hidden;
+        z-index: 2;
+    }
 
     h3 {
-        font-size: 1.5rem;
-        background-color: hsl(0, 0%, 100%);
-        width: 100%;
-        color: black;
-        border-radius: 0.5rem;
+        color: white;
+        font-size: 2.5rem;
+        font-weight: 700;
+        visibility: hidden;
+        z-index: 2;
     }
 
     &:hover {
-        background-color: transparent;
-        background-blend-mode: multiply;
-        opacity: 1;
+        &::before {
+            background: rgba(0, 0, 0, 0.7);
+        }
+
+        .btn-container {
+            visibility: visible;
+        }
 
         h3 {
-            visibility: hidden;
+            visibility: visible;
         }
     }
+
+    @media screen and (min-width: $screen-md) {
+        grid-row: span 2;
+        grid-column: span 2;
+    }
+}
+
+.project-1 {
+    background-image: url(/assets/images/Gadgeteen.png);
+}
+
+.project-2 {
+    background-image: url(/assets/images/prismatic-pay.png);
+}
+.project-3 {
+    background-image: url(/assets/images/weather-app.png);
+}
+.project-4 {
+    background-image: url(/assets/images/tutoro.png);
+}
+.project-5 {
+    background-image: url(/assets/images/rock-paper-scissors.png);
+}
+.project-6 {
+    background-image: url(/assets/images/heroes-arena.png);
 }
 
 .weather-widget > * {
