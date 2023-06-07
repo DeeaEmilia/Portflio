@@ -1,11 +1,19 @@
 @font-face {
     font-family: 'Raleway';
-    src: url(../fonts/Raleway-Regular.woff2);
+    font-style: normal;
+    font-weight: 400;
+    src: local('Raleway'),
+        url('/assets/fonts/Raleway-Regular.woff2') format('woff2');
+    font-display: swap;
 }
 
 @font-face {
     font-family: 'Calligraphy';
-    src: url(../fonts/EverythingCalligraphy.woff2);
+    font-style: normal;
+    font-weight: 400;
+    src: local('Calligraphy'),
+        url('/assets/fonts/EverythingCalligraphy.woff2') format('woff2');
+    font-display: swap;
 }
 
 * {
