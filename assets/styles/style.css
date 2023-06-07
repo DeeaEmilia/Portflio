@@ -4,7 +4,7 @@
 }
 @font-face {
   font-family: "Calligraphy";
-  src: url(../fonts/Calligraphy.ttf);
+  src: url(../fonts/EverythingCalligraphy.woff2);
 }
 * {
   margin: 0;
@@ -409,27 +409,27 @@ nav ul li:hover, nav ul li:focus, nav ul li:active {
 }
 
 .project-1 {
-  background-image: url(/assets/images/Gadgeteen.png);
+  background-image: url(/assets/images/Gadgeteen.webp), url(/assets/images/Gadgeteen.jpg);
 }
 
 .project-2 {
-  background-image: url(/assets/images/prismatic-pay.png);
+  background-image: url(/assets/images/prismatic-pay.webp), url(/assets/images/prismatic-pay.jpg);
 }
 
 .project-3 {
-  background-image: url(/assets/images/weather-app.png);
+  background-image: url(/assets/images/weather-app.webp), url(/assets/images/weather-app.jpg);
 }
 
 .project-4 {
-  background-image: url(/assets/images/tutoro.png);
+  background-image: url(/assets/images/tutoro.webp), url(/assets/images/tutoro.jpg);
 }
 
 .project-5 {
-  background-image: url(/assets/images/rock-paper-scissors.png);
+  background-image: url(/assets/images/rock-paper-scissors.webp), url(/assets/images/rock-paper-scissors.jpg);
 }
 
 .project-6 {
-  background-image: url(/assets/images/heroes-arena.png);
+  background-image: url(/assets/images/heroes-arena.webp), url(/assets/images/heroes-arena.jpg);
 }
 
 .weather-widget > * {
@@ -683,4 +683,8 @@ body {
 
 .show {
   display: flex;
+}
+
+.sr-only {
+  display: none;
 }/*# sourceMappingURL=style.css.map */
