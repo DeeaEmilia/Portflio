@@ -62,8 +62,7 @@ function getUserLocation() {
                 const longitude = position.coords.longitude;
                 getWeatherData(latitude, longitude);
             },
-            (error) => {
-                console.error('Error getting user location:', error);
+            () => {
                 // Fallback to a default location if geolocation fails.
                 getWeatherData(null, null, 'Bucharest');
             }
@@ -75,15 +74,9 @@ function getUserLocation() {
     }
 }
 
-function getWeatherData(latitude, longitude, fallbackLocation) {
+function getWeatherData() {
     const apiKey = '69518b1f8f16c35f8705550dc4161056';
-    let apiUrl;
-
-    if (latitude && longitude) {
-        apiUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=${apiKey}&units=metric`;
-    } else {
-        apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${fallbackLocation}&appid=${apiKey}&units=metric`;
-    }
+    const apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=Bucharest&appid=${apiKey}&units=metric`;
 
     fetch(apiUrl)
         .then((response) => response.json())
@@ -107,8 +100,7 @@ function updateWeatherWidget(data) {
     conditionElement.textContent = data.weather[0].description;
     weatherIconElement.src = `assets/weather-icons/${data.weather[0].icon}.svg`;
 }
-
-getUserLocation();
+getWeatherData();
 
 function updateTime() {
     const now = new Date();
