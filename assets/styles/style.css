@@ -157,7 +157,7 @@ nav ul li:hover, nav ul li:focus, nav ul li:active {
 .signature {
   font-family: "Calligraphy", sans-serif;
   font-weight: 700;
-  opacity: 0.1;
+  opacity: 0.5;
   font-size: 1.5rem;
 }
 
@@ -689,8 +689,4 @@ body {
 
 .show {
   display: flex;
-}
-
-.sr-only {
-  display: none;
 }/*# sourceMappingURL=style.css.map */
