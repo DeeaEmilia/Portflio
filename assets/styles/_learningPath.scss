@@ -1,4 +1,7 @@
 .learning-path {
+    &.show {
+        display: flex;
+    }
     .title {
         font-weight: 700;
     }

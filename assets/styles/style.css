@@ -425,6 +425,9 @@ nav ul li:hover, nav ul li:focus, nav ul li:active {
   font-weight: bold;
 }
 
+.learning-path.show {
+  display: flex;
+}
 .learning-path .title {
   font-weight: 700;
 }
