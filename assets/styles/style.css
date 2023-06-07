@@ -349,6 +349,14 @@ nav ul li:hover, nav ul li:focus, nav ul li:active {
   text-align: left;
 }
 
+.subtitle {
+  grid-column: 1/-1;
+  text-align: center;
+  background: none;
+  border: none;
+  box-shadow: none;
+}
+
 .projects {
   position: relative;
   color: var(--card);
@@ -667,11 +675,6 @@ body {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 1rem;
-}
-
-.subtitle {
-  grid-column: 1/-1;
-  text-align: center;
 }
 
 .active {

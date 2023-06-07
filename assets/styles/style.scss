@@ -38,11 +38,6 @@ body {
     gap: 1rem;
 }
 
-.subtitle {
-    grid-column: 1 / -1;
-    text-align: center;
-}
-
 .active {
     background-color: var(--card);
 }

@@ -125,6 +125,14 @@
     text-align: left;
 }
 
+.subtitle {
+    grid-column: 1 / -1;
+    text-align: center;
+    background: none;
+    border: none;
+    box-shadow: none;
+}
+
 .projects {
     &.show {
         display: grid;
