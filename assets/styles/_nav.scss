@@ -35,10 +35,24 @@ nav {
     border-radius: 34px;
     box-shadow: hsla(0, 0%, 0%, 0.3) 0px 2px 8px;
 
+    @media screen and (min-width: $screen-2k) {
+        border-radius: 50px;
+    }
+
+    @media screen and (min-width: $screen-4k) {
+        border-radius: 150px;
+    }
     ul {
         display: flex;
         flex-direction: row;
         padding: 0.5rem;
+
+        @media screen and (min-width: $screen-4k) {
+            padding: 2rem;
+        }
+        @media screen and (min-width: $screen-2k) {
+            padding: 1rem;
+        }
 
         li {
             color: var(--font);
@@ -50,16 +64,36 @@ nav {
             margin: 0 0.2rem;
 
             &:hover,
-            &:focus {
+            &:focus,
+            &:active {
                 background-color: var(--card);
                 border-radius: 1rem;
-                padding: 0.5rem 1rem;
                 transition: 250ms ease-in;
                 cursor: pointer;
                 margin: 0 0.2rem;
+
+                @media screen and (min-width: $screen-2k) {
+                    border-radius: 50px;
+                }
+                @media screen and (min-width: $screen-4k) {
+                    border-radius: 150px;
+                }
             }
+
             @media screen and (min-width: $screen-md) {
                 font-size: 1rem;
+            }
+
+            @media screen and (min-width: $screen-2k) {
+                font-size: 1.5rem;
+                padding: 1rem 2rem;
+                border-radius: 50px;
+            }
+
+            @media screen and (min-width: $screen-4k) {
+                font-size: 3rem;
+                padding: 2rem 4rem;
+                border-radius: 150px;
             }
         }
     }

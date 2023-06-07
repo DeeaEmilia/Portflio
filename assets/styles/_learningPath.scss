@@ -37,13 +37,13 @@
         }
     }
 
-    @media screen and (min-width: $screen-lg) {
+    @media screen and (min-width: $screen-sm) {
         grid-column: span 2;
         grid-row: span 2;
     }
 
     @media screen and (min-width: $screen-xxl) {
-        grid-column: span 4;
+        grid-column: span 3;
         grid-row: span 3;
     }
 }

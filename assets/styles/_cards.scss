@@ -9,6 +9,10 @@
     box-shadow: hsla(0, 0%, 0%, 0.4) 0px 2px 8px;
     text-align: center;
 
+    @media screen and (min-width: $screen-4k) {
+        font-size: 3rem;
+    }
+
     a {
         display: flex;
         justify-content: center;
@@ -111,13 +115,6 @@
 
 .form-container {
     text-align: left;
-}
-
-.project-1 {
-    @media screen and (min-width: $screen-md) {
-        grid-column: span 3;
-        grid-row: span 3;
-    }
 }
 
 .projects {

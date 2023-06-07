@@ -23,24 +23,11 @@ body {
 
 .main-content {
     display: grid;
-    justify-content: center;
     gap: 2rem;
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
 
-    @media screen and (min-width: $screen-sm) {
-        grid-template-columns: repeat(1, 1fr);
-    }
-
-    @media screen and (min-width: $screen-md) {
-        grid-template-columns: repeat(3, 1fr);
-    }
-
-    @media screen and (min-width: $screen-xl) {
-        grid-template-columns: repeat(5, 1fr);
-    }
-
-    @media screen and (min-width: $screen-xxl) {
-        grid-template-columns: repeat(8, 1fr);
+    @media screen and (min-width: $screen-hd) {
+        grid-template-columns: repeat(6, 1fr);
     }
 }
 

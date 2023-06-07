@@ -18,4 +18,7 @@
     &:hover {
         background-color: var(--button);
     }
+    @media screen and (min-width: $screen-4k) {
+        font-size: 3rem;
+    }
 }

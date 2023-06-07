@@ -77,10 +77,30 @@ nav {
   border-radius: 34px;
   box-shadow: hsla(0, 0%, 0%, 0.3) 0px 2px 8px;
 }
+@media screen and (min-width: 2048px) {
+  nav {
+    border-radius: 50px;
+  }
+}
+@media screen and (min-width: 3840px) {
+  nav {
+    border-radius: 150px;
+  }
+}
 nav ul {
   display: flex;
   flex-direction: row;
   padding: 0.5rem;
+}
+@media screen and (min-width: 3840px) {
+  nav ul {
+    padding: 2rem;
+  }
+}
+@media screen and (min-width: 2048px) {
+  nav ul {
+    padding: 1rem;
+  }
 }
 nav ul li {
   color: var(--font);
@@ -91,17 +111,40 @@ nav ul li {
   transition: 250ms ease-in;
   margin: 0 0.2rem;
 }
-nav ul li:hover, nav ul li:focus {
+nav ul li:hover, nav ul li:focus, nav ul li:active {
   background-color: var(--card);
   border-radius: 1rem;
-  padding: 0.5rem 1rem;
   transition: 250ms ease-in;
   cursor: pointer;
   margin: 0 0.2rem;
 }
+@media screen and (min-width: 2048px) {
+  nav ul li:hover, nav ul li:focus, nav ul li:active {
+    border-radius: 50px;
+  }
+}
+@media screen and (min-width: 3840px) {
+  nav ul li:hover, nav ul li:focus, nav ul li:active {
+    border-radius: 150px;
+  }
+}
 @media screen and (min-width: 768px) {
   nav ul li {
     font-size: 1rem;
+  }
+}
+@media screen and (min-width: 2048px) {
+  nav ul li {
+    font-size: 1.5rem;
+    padding: 1rem 2rem;
+    border-radius: 50px;
+  }
+}
+@media screen and (min-width: 3840px) {
+  nav ul li {
+    font-size: 3rem;
+    padding: 2rem 4rem;
+    border-radius: 150px;
   }
 }
 
@@ -130,6 +173,11 @@ nav ul li:hover, nav ul li:focus {
 }
 .btn:hover {
   background-color: var(--button);
+}
+@media screen and (min-width: 3840px) {
+  .btn {
+    font-size: 3rem;
+  }
 }
 
 .switch {
@@ -186,6 +234,11 @@ nav ul li:hover, nav ul li:focus {
   padding: 2rem;
   box-shadow: hsla(0, 0%, 0%, 0.4) 0px 2px 8px;
   text-align: center;
+}
+@media screen and (min-width: 3840px) {
+  .card {
+    font-size: 3rem;
+  }
 }
 .card a {
   display: flex;
@@ -288,13 +341,6 @@ nav ul li:hover, nav ul li:focus {
   text-align: left;
 }
 
-@media screen and (min-width: 768px) {
-  .project-1 {
-    grid-column: span 3;
-    grid-row: span 3;
-  }
-}
-
 .projects {
   background-size: cover;
   background-position: center;
@@ -348,7 +394,7 @@ nav ul li:hover, nav ul li:focus {
     transform: translateY(0);
   }
 }
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 576px) {
   .learning-path {
     grid-column: span 2;
     grid-row: span 2;
@@ -356,7 +402,7 @@ nav ul li:hover, nav ul li:focus {
 }
 @media screen and (min-width: 1400px) {
   .learning-path {
-    grid-column: span 4;
+    grid-column: span 3;
     grid-row: span 3;
   }
 }
@@ -551,28 +597,12 @@ body {
 
 .main-content {
   display: grid;
-  justify-content: center;
   gap: 2rem;
-  grid-template-columns: 1fr;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
 }
-@media screen and (min-width: 576px) {
+@media screen and (min-width: 1920px) {
   .main-content {
-    grid-template-columns: repeat(1, 1fr);
-  }
-}
-@media screen and (min-width: 768px) {
-  .main-content {
-    grid-template-columns: repeat(3, 1fr);
-  }
-}
-@media screen and (min-width: 1200px) {
-  .main-content {
-    grid-template-columns: repeat(5, 1fr);
-  }
-}
-@media screen and (min-width: 1400px) {
-  .main-content {
-    grid-template-columns: repeat(8, 1fr);
+    grid-template-columns: repeat(6, 1fr);
   }
 }
 
