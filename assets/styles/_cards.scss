@@ -126,6 +126,9 @@
 }
 
 .projects {
+    &.show {
+        display: grid;
+    }
     position: relative;
     color: var(--card);
     transition: filter 0.3s ease-in;

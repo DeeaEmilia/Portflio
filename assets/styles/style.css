@@ -358,6 +358,9 @@ nav ul li:hover, nav ul li:focus, nav ul li:active {
   background-repeat: no-repeat;
   background-position: center;
 }
+.projects.show {
+  display: grid;
+}
 .projects::before {
   content: "";
   position: absolute;
@@ -425,9 +428,6 @@ nav ul li:hover, nav ul li:focus, nav ul li:active {
   font-weight: bold;
 }
 
-.learning-path.show {
-  display: flex;
-}
 .learning-path .title {
   font-weight: 700;
 }
@@ -679,5 +679,5 @@ body {
 }
 
 .show {
-  display: grid;
+  display: flex;
 }/*# sourceMappingURL=style.css.map */
