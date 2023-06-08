@@ -38,6 +38,26 @@ body {
     gap: 1rem;
 }
 
+.flex-container {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.signature {
+    font-family: 'Calligraphy', sans-serif;
+    font-weight: 700;
+    opacity: 0.5;
+    font-size: 1.5rem;
+    color: var(--font);
+
+    &:hover,
+    &:active,
+    &:focus {
+        opacity: 1;
+        cursor: pointer;
+    }
+}
 .active {
     background-color: var(--card);
 }

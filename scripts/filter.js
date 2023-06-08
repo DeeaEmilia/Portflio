@@ -7,7 +7,7 @@ function filterSelection(category) {
     // Add the 'show' class to the filtered elements, and remove it from the elements that are not selected
     for (let i = 0; i < cards.length; i++) {
         const card = cards[i];
-        if (category === 'all' || card.classList.contains(category)) {
+        if (card.classList.contains(category)) {
             addClass(card, 'show');
         } else {
             removeClass(card, 'show');
@@ -57,12 +57,12 @@ for (let i = 0; i < filterItems.length; i++) {
 }
 
 window.addEventListener('popstate', function (event) {
-    let filter = 'all';
+    let filter = 'home';
     if (event.state && event.state.filter) {
         filter = event.state.filter;
     } else {
         const currentUrl = new URL(window.location.href);
-        filter = currentUrl.searchParams.get('filter') || 'all';
+        filter = currentUrl.searchParams.get('filter') || 'home';
     }
     filterSelection(filter);
 

@@ -154,13 +154,6 @@ nav ul li:hover, nav ul li:focus, nav ul li:active {
   }
 }
 
-.signature {
-  font-family: "Calligraphy", sans-serif;
-  font-weight: 700;
-  opacity: 0.5;
-  font-size: 1.5rem;
-}
-
 .btn {
   display: flex;
   flex-direction: row;
@@ -670,6 +663,24 @@ body {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 1rem;
+}
+
+.flex-container {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.signature {
+  font-family: "Calligraphy", sans-serif;
+  font-weight: 700;
+  opacity: 0.5;
+  font-size: 1.5rem;
+  color: var(--font);
+}
+.signature:hover, .signature:active, .signature:focus {
+  opacity: 1;
+  cursor: pointer;
 }
 
 .active {
