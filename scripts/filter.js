@@ -78,3 +78,5 @@ window.addEventListener('popstate', function (event) {
         newActiveFilter.classList.add('active');
     }
 });
+
+window.dispatchEvent(new PopStateEvent('popstate'));

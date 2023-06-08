@@ -143,6 +143,9 @@
 }
 
 .projects {
+    &:hover {
+        cursor: pointer;
+    }
     &.show {
         display: grid;
     }
@@ -167,11 +170,6 @@
         border-radius: 1rem;
     }
 
-    .btn-container {
-        visibility: hidden;
-        z-index: 2;
-    }
-
     h3 {
         color: white;
         font-size: 2.5rem;
@@ -183,10 +181,6 @@
     &:hover {
         &::before {
             background: rgba(0, 0, 0, 0.7);
-        }
-
-        .btn-container {
-            visibility: visible;
         }
 
         h3 {

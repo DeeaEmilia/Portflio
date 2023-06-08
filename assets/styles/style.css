@@ -377,6 +377,9 @@ nav ul li:hover, nav ul li:focus, nav ul li:active {
   background-repeat: no-repeat;
   background-position: center;
 }
+.projects:hover {
+  cursor: pointer;
+}
 .projects.show {
   display: grid;
 }
@@ -392,10 +395,6 @@ nav ul li:hover, nav ul li:focus, nav ul li:active {
   z-index: 1;
   border-radius: 1rem;
 }
-.projects .btn-container {
-  visibility: hidden;
-  z-index: 2;
-}
 .projects h3 {
   color: white;
   font-size: 2.5rem;
@@ -405,9 +404,6 @@ nav ul li:hover, nav ul li:focus, nav ul li:active {
 }
 .projects:hover::before {
   background: rgba(0, 0, 0, 0.7);
-}
-.projects:hover .btn-container {
-  visibility: visible;
 }
 .projects:hover h3 {
   visibility: visible;
