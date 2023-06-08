@@ -32,6 +32,26 @@ body {
     }
 }
 
+.section {
+    grid-column: 1 / -1;
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    min-height: 50vh;
+
+    @media screen and (min-width: $screen-hd) {
+        grid-template-columns: repeat(6, 1fr);
+    }
+}
+
+.subtitle {
+    grid-column: 1 / -1;
+    text-align: center;
+    background: none;
+    border: none;
+    box-shadow: none;
+}
+
 .btn-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
