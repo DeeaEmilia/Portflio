@@ -431,18 +431,6 @@ nav ul li:hover, nav ul li:focus, nav ul li:active {
   background-image: url(/assets/images/weather-app.webp), url(/assets/images/weather-app.jpg);
 }
 
-.project-4 {
-  background-image: url(/assets/images/tutoro.webp), url(/assets/images/tutoro.jpg);
-}
-
-.project-5 {
-  background-image: url(/assets/images/rock-paper-scissors.webp), url(/assets/images/rock-paper-scissors.jpg);
-}
-
-.project-6 {
-  background-image: url(/assets/images/heroes-arena.webp), url(/assets/images/heroes-arena.jpg);
-}
-
 .weather-widget > * {
   font-weight: bold;
 }
