@@ -17,16 +17,13 @@
         width: 5rem;
         height: 5rem;
     }
-}
-
-.github-container,
-.linkedin-container {
     a {
         display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: column;
         color: var(--font);
+        font-weight: 700;
 
         &:hover {
             color: var(--primary);
@@ -73,6 +70,18 @@
     }
     .about-body {
         margin-top: 2rem;
+        font-size: 1.2rem;
+        span {
+            background: -webkit-linear-gradient(
+                45deg,
+                var(--primary),
+                var(--secondary)
+            );
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-weight: 700;
+        }
     }
 
     .btn {
